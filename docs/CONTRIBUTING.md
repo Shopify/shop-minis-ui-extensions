@@ -10,7 +10,7 @@ Thank you for your interest in contributing to the Shop Minis UI Extensions Comp
 
 Before you start contributing, it's essential to familiarize yourself with our design and code guidelines.
 
-- **Read and Understand Guidelines**: Please read the [Minis UI Extensions Components Design Guidelines](DESIGN_GUIDELINES.md) and [Code Guidelines](CODE_GUIDELINES.md) to ensure your contributions meet our standards.
+- **Read and Understand Guidelines**: Please read the [Minis UI Extensions Components Design Guidelines](DESIGN_GUIDELINES.md), [Code Guidelines](CODE_GUIDELINES.md) and [Code of Conduct](./CODE_OF_CONDUCT.md) to ensure your contributions meet our standards.
 
 ### 2. Proposal
 
