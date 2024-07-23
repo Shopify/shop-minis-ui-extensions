@@ -1,0 +1,14 @@
+{
+  "name": "Test Mini",
+  "features": [
+    "FULL_BLEED_VIEWER"
+  ],
+  "handle": "test-mini",
+  "icon_url": "https://cdn.shopify.com/shop-assets/minis/entry_points/687400209a45ba2e551d461317912ed07915e9de",
+  "partner_name": "Shop Team",
+  "shopify_apps": {
+    "production": 109480280065
+  },
+  "entry_points": [],
+  "contact_email": "shop-minis@shopify.com"
+}

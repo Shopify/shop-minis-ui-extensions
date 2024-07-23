@@ -1,0 +1,35 @@
+{
+  "name": "shop-minis-ui-extensions-monorepo",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "fixture-mini": "CUSTOM_BASE_PATH=\"./packages/fixture-mini/\" shop-minis",
+    "test": "jest",
+    "lint": "eslint .",
+    "bump-minis-libs": "yarn add --exact -W @shopify/shop-minis-platform-sdk@latest @shopify/shop-minis-runtime@latest @shopify/shop-minis-cli@latest"
+  },
+  "dependencies": {
+    "@shopify/shop-minis-platform-sdk": "0.1.105",
+    "@shopify/shop-minis-runtime": "0.0.110",
+    "@shopify/shop-minis-ui-extensions": "0.0.11"
+  },
+  "devDependencies": {
+    "@shopify/shop-minis-cli": "0.0.121",
+    "@types/jest": "^29.2.6",
+    "babel-jest": "^26.6.3",
+    "eslint": "^8.32.0",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "resolutions": {
+    "@apollo/federation": "0.38.1",
+    "graphql": "15.8.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@shopify/shop-minis-ui-extensions",
+  "version": "0.0.11",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.tsx",
+  "files": [
+    "src",
+    "LICENSE.md"
+  ],
+  "license": "MIT",
+  "licenseFilename": "LICENSE.md",
+  "peerDependencies": {
+    "@react-navigation/native": "*",
+    "@shopify/shop-minis-platform-sdk": "*",
+    "lodash": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-fast-image": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": "*",
+    "react-native-video": "*"
+  },
+  "peerDependenciesMeta": {
+    "@react-navigation/native": {
+      "optional": true
+    },
+    "@shopify/shop-minis-platform-sdk": {
+      "optional": true
+    },
+    "lodash": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    },
+    "react-native-fast-image": {
+      "optional": true
+    },
+    "react-native-gesture-handler": {
+      "optional": true
+    },
+    "react-native-reanimated": {
+      "optional": true
+    },
+    "react-native-video": {
+      "optional": true
+    }
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
