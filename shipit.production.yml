@@ -1,0 +1,9 @@
+dependencies:
+  override:
+    - yarn install --frozen-lockfile --ignore-engines --no-progress
+
+deploy:
+  override:
+    - sh -c ''
+    - chdir packages/shop-minis-ui-extensions && generate-local-npmrc "@shopify:registry=https://registry.npmjs.org/"
+    - chdir packages/shop-minis-ui-extensions && TZ=UTC npm publish --tag latest --access public --verbose

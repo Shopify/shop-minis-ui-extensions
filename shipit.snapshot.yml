@@ -1,0 +1,9 @@
+dependencies:
+  override:
+    - yarn install --frozen-lockfile --ignore-engines --no-progress
+
+deploy:
+  override:
+    - sh -c ''
+    - chdir packages/shop-minis-ui-extensions && generate-local-npmrc "@shopify:registry=https://registry.npmjs.org/"
+    - chdir packages/shop-minis-ui-extensions && TZ=UTC yarn publish --tag snapshot --new-version 0.0.0-snapshot.$(date +%Y%m%d%H%M%S) --no-git-tag-version --access public --verbose

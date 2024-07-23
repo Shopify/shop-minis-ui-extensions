@@ -2,7 +2,8 @@
   "name": "@shopify/shop-minis-ui-extensions",
   "version": "0.0.11",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org/"
   },
   "main": "src/index.tsx",
   "files": [
