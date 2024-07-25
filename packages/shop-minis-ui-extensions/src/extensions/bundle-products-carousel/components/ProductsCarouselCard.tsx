@@ -19,11 +19,14 @@ export interface ProductsCarouselProduct extends ProductCardProduct {
   defaultVariant: ProductsCarouselProductVariant
 }
 
+const CAROUSEL_CARD_DEFAULT_WIDTH = 150
+
 export function ProductsCarouselCard({
   product,
   shopId,
   onProductAddedToBundle,
   onProductRemovedFromBundle,
+  fixedWidth,
 }: {
   product: ProductsCarouselProduct
   shopId: string
@@ -35,6 +38,7 @@ export function ProductsCarouselCard({
     product: ProductsCarouselProduct,
     variant: ProductsCarouselProduct['defaultVariant']
   ) => void
+  fixedWidth?: boolean
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
   const [isAddedToBundle, setIsAddedToBundle] = useState(false)
@@ -54,7 +58,11 @@ export function ProductsCarouselCard({
   ])
 
   return (
-    <Box key={product.id} maxWidth={150}>
+    <Box
+      key={product.id}
+      flex={fixedWidth ? undefined : 1}
+      maxWidth={fixedWidth ? CAROUSEL_CARD_DEFAULT_WIDTH : undefined}
+    >
       <ProductCard
         product={product}
         shopId={shopId}

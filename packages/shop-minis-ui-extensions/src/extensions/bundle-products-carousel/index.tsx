@@ -1,5 +1,6 @@
 import {Box, Text, ScreenWidthContainer} from '@shopify/shop-minis-platform-sdk'
 import {ScrollView} from 'react-native'
+import {PropsWithChildren} from 'react'
 
 import {
   ProductsCarouselCard,
@@ -10,10 +11,10 @@ import {
 export function BundleProductsCarousel({
   products,
   shopId,
+  subtitle,
   onProductAddedToBundle,
   onProductRemovedFromBundle,
   title = 'Bundle and Save',
-  subtitle,
 }: {
   products: ProductsCarouselProduct[]
   shopId: string
@@ -28,6 +29,8 @@ export function BundleProductsCarousel({
   title?: string
   subtitle?: string
 }) {
+  const cardsShouldScroll = products.length > 2 // 1 or 2 items fit in the screen width, so no need to scroll
+
   return (
     <Box marginTop="xs">
       <Text variant="bodyTitleLarge">{title}</Text>
@@ -37,8 +40,14 @@ export function BundleProductsCarousel({
         </Text>
       ) : null}
       <ScreenWidthContainer>
-        <ScrollView horizontal>
-          <Box flexDirection="row" gap="xs" marginLeft="gutter">
+        <CardsContainer scrollable={cardsShouldScroll}>
+          <Box
+            flexDirection="row"
+            gap="xs"
+            marginLeft="gutter"
+            marginRight={cardsShouldScroll ? 'none' : 'gutter'}
+            marginTop="xxs"
+          >
             {products.map(product => (
               <ProductsCarouselCard
                 key={product.id}
@@ -46,11 +55,18 @@ export function BundleProductsCarousel({
                 onProductAddedToBundle={onProductAddedToBundle}
                 onProductRemovedFromBundle={onProductRemovedFromBundle}
                 shopId={shopId}
+                fixedWidth={products.length !== 2} // when we have two products each card dynamically takes 50% width
               />
             ))}
           </Box>
-        </ScrollView>
+        </CardsContainer>
       </ScreenWidthContainer>
     </Box>
   )
 }
+
+const CardsContainer = ({
+  children,
+  scrollable,
+}: PropsWithChildren<{scrollable?: boolean}>) =>
+  scrollable ? <ScrollView horizontal>{children}</ScrollView> : <>{children}</>
