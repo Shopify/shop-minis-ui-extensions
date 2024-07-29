@@ -1,5 +1,5 @@
 import {useCallback} from 'react'
-import {Box, ExtensionSpacingProvider} from '@shopify/shop-minis-platform-sdk'
+import {Box, ExtensionProviders} from '@shopify/shop-minis-platform-sdk'
 import {useExtensionShopActions} from '@shopify/shop-minis-platform-sdk/actions'
 
 import {Image, Order, Price, Product} from '../types'
@@ -31,7 +31,7 @@ export function ProductOfferCard({
   }, [openMiniViewer])
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <Box>
         <ProductOfferCardView
           onPress={onPress}
@@ -44,6 +44,6 @@ export function ProductOfferCard({
           animateIn
         />
       </Box>
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

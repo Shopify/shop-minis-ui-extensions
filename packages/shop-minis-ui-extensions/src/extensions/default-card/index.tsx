@@ -1,6 +1,6 @@
 import {useCallback} from 'react'
 import {useExtensionShopActions} from '@shopify/shop-minis-platform-sdk/actions'
-import {ExtensionSpacingProvider} from '@shopify/shop-minis-platform-sdk'
+import {ExtensionProviders} from '@shopify/shop-minis-platform-sdk'
 
 import {Image} from '../types'
 
@@ -21,7 +21,7 @@ export function DefaultCard({actionText, image, text, title}: DefaultCardData) {
   }, [openMiniViewer])
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <DefaultCardView
         image={image}
         title={title}
@@ -29,6 +29,6 @@ export function DefaultCard({actionText, image, text, title}: DefaultCardData) {
         actionText={actionText}
         onPress={onPressHandler}
       />
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

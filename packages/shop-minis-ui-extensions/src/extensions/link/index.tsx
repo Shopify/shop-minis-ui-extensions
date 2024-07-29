@@ -1,6 +1,6 @@
 import {useCallback} from 'react'
 import {
-  ExtensionSpacingProvider,
+  ExtensionProviders,
   PressableAnimated,
   Text,
 } from '@shopify/shop-minis-platform-sdk'
@@ -18,7 +18,7 @@ export function Link({actionText}: LinkData) {
   }, [openMiniViewer])
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <PressableAnimated onPress={onPressHandler} accessibilityRole="link">
         <Text
           variant="buttonLarge"
@@ -32,6 +32,6 @@ export function Link({actionText}: LinkData) {
           {actionText}
         </Text>
       </PressableAnimated>
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

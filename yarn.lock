@@ -2835,10 +2835,10 @@
   resolved "https://registry.yarnpkg.com/@shopify/restyle/-/restyle-2.4.4.tgz#a94dde4e7fcfa03bc5f06648b70ecf47caa661ba"
   integrity sha512-Y64T8pCSKZi7ChMMfCfe+EJJsqeF+lNLsxYDHbuU63ffLHN7wRwIALJY6VqzcJWZX3fhCztX7AqOkgc7CetfPg==
 
-"@shopify/shop-minis-cli@0.0.121":
-  version "0.0.121"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.121.tgz#814f1c28ef0f049358bd6f42c4cabb460c5459c1"
-  integrity sha512-VF6kPY9wzj71d9vPHfJVU4PxWTxA6eK4g5Fmsx9LrqcY780HMBLjF+Wu68Hnq0mjAAdYoC9nLj1rc2ef7upW2Q==
+"@shopify/shop-minis-cli@0.0.124":
+  version "0.0.124"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.124.tgz#63633ab316736290ab6800e78a4c92224d6d6708"
+  integrity sha512-2zVHHNX/3MkJn0XEf7ELvLw/mGdicaK0u3I/rdcOQfZoQCsmmbhEl+mBPTmzX928UYNBAYI/5Q7BA9xde6ydHw==
   dependencies:
     "@google-cloud/storage" "^7.10.0"
     "@inquirer/editor" "^1.2.4"
@@ -2878,15 +2878,15 @@
     serve-static "^1.15.0"
     suppress-experimental-warnings "^1.1.17"
 
-"@shopify/shop-minis-platform-sdk@0.1.105":
-  version "0.1.105"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.105.tgz#4b4a77a345693aff4ecc74d396cadfa86179553c"
-  integrity sha512-x0oLOAJUCQq1RYnrj6gl2L/Ip+aDj/w6MQdS78yV8E7qv03Q9wRbD2sAcfULTmC4+KjD18ikB9ImF2fL8edeIQ==
+"@shopify/shop-minis-platform-sdk@0.1.107":
+  version "0.1.107"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.107.tgz#620cbcdb46415b8993c89d56cf873f9e2ae625b6"
+  integrity sha512-e+vJZ7BPMOnmZy6Lp8/3vpxDBO+f78EjjnwncLoALN/1+TOGQQnIxKwkPwRsXTAGXM667/GKDsr5cAmlpqRqUA==
 
-"@shopify/shop-minis-runtime@0.0.110":
-  version "0.0.110"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.110.tgz#5f7bc97c41e56d548953d2b3f0f135f8e33b4202"
-  integrity sha512-1sav0WZRZAh7x4oaQm5RnkQT9T75BGDmqFCW0kuNsbokMaySGoDhxyt8j1wRATrr7s1jF/apDs+OiT8douo2MA==
+"@shopify/shop-minis-runtime@0.0.114":
+  version "0.0.114"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.114.tgz#18a59f0b94403358ce596b0e57dc8110117cfc38"
+  integrity sha512-47FjiGyHIf5hR6YC5pbLDc9JICRKs62eioWok29D1c/neEoQd29jM3b29TEAjODn5uw4rqpS6LAVXO7iGR1K+A==
   dependencies:
     "@apollo/client" "3.7.17"
     "@babel/core" "7.24.5"
@@ -2946,7 +2946,7 @@
     react-native-video "6.0.0-beta.4"
     react-native-webview "11.26.1"
     react-test-renderer "18.2.0"
-    typescript "5.5.0-beta"
+    typescript "5.5.4"
     url-parse "1.5.10"
 
 "@sideway/address@^4.1.5":
@@ -12676,10 +12676,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@5.5.0-beta:
-  version "5.5.0-beta"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-beta.tgz#ae6a2e3aa277f74478f1743e8771676cddfcdbec"
-  integrity sha512-FRg3e/aQg3olEG3ff8YjHOERsO4IM0m4qGrsE4UMvILaq4TdDZ6gQX4+2Rq9SjTpfSe/ebwiHcsjm/7FfWWQ6Q==
+typescript@5.5.4:
+  version "5.5.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
+  integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
