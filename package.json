@@ -14,8 +14,7 @@
   },
   "dependencies": {
     "@shopify/shop-minis-platform-sdk": "0.1.107",
-    "@shopify/shop-minis-runtime": "0.0.114",
-    "@shopify/shop-minis-ui-extensions": "0.0.11"
+    "@shopify/shop-minis-runtime": "0.0.114"
   },
   "devDependencies": {
     "@shopify/shop-minis-cli": "0.0.124",
