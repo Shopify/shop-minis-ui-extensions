@@ -5,7 +5,7 @@ import {
   useSheet,
   Shelf,
   PressableAnimated,
-  ExtensionSpacingProvider,
+  ExtensionProviders,
 } from '@shopify/shop-minis-platform-sdk'
 import {VariantOptionsModal} from '@shopify/shop-minis-platform-sdk/src/components/VariantPicker/components/VariantOptionsModal'
 
@@ -142,7 +142,7 @@ export function BundleSelector({
   )
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <Box marginBottom="s">
         <Text variant="bodyTitleLarge">What&apos;s included</Text>
       </Box>
@@ -176,6 +176,6 @@ export function BundleSelector({
           />
         )
       })}
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

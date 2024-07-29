@@ -5,7 +5,7 @@ import {
   useTheme,
   Button,
   useMinisParams,
-  ExtensionSpacingProvider,
+  ExtensionProviders,
 } from '@shopify/shop-minis-platform-sdk'
 import {useCallback, useMemo, useState, useRef} from 'react'
 import {FlatList, ListRenderItem, ViewToken} from 'react-native'
@@ -97,7 +97,7 @@ export function VideoCollection({
   )
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <SectionTitle
         location={extensionContext?.extensionTarget!}
         title={title}
@@ -124,6 +124,6 @@ export function VideoCollection({
         size="m"
         onPress={() => handleItemPressed()}
       />
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

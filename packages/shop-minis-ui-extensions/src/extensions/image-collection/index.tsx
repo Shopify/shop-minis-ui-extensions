@@ -2,7 +2,7 @@ import {useCallback} from 'react'
 import {
   Box,
   Button,
-  ExtensionSpacingProvider,
+  ExtensionProviders,
   useMinisParams,
 } from '@shopify/shop-minis-platform-sdk'
 import {SectionTitle} from '@shopify/shop-minis-platform-sdk/src/components/SectionTitle'
@@ -61,7 +61,7 @@ export function ImageCollection({items, title, layout}: ImageCollectionData) {
     )
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <SectionTitle
         location={extensionContext?.extensionTarget!}
         title={title || DEFAULT_TITLE}
@@ -73,6 +73,6 @@ export function ImageCollection({items, title, layout}: ImageCollectionData) {
         size="m"
         onPress={handleViewAllPressed}
       />
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }

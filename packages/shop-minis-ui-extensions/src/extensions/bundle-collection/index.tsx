@@ -2,7 +2,7 @@ import {useCallback, useMemo} from 'react'
 import {FlatListProps, useWindowDimensions} from 'react-native'
 import {
   Box,
-  ExtensionSpacingProvider,
+  ExtensionProviders,
   Text,
   useTheme,
 } from '@shopify/shop-minis-platform-sdk'
@@ -79,7 +79,7 @@ export function BundleCollection({bundles, title}: BundleUpsellData) {
   }, [bundles, cardWidth, theme.spacing.xs])
 
   return (
-    <ExtensionSpacingProvider>
+    <ExtensionProviders>
       <Box marginBottom="s">
         <Text variant="bodyTitleLarge" marginBottom="s">
           {title || DEFAULT_TITLE}
@@ -102,6 +102,6 @@ export function BundleCollection({bundles, title}: BundleUpsellData) {
           />
         </Box>
       </Box>
-    </ExtensionSpacingProvider>
+    </ExtensionProviders>
   )
 }
