@@ -2835,10 +2835,10 @@
   resolved "https://registry.yarnpkg.com/@shopify/restyle/-/restyle-2.4.4.tgz#a94dde4e7fcfa03bc5f06648b70ecf47caa661ba"
   integrity sha512-Y64T8pCSKZi7ChMMfCfe+EJJsqeF+lNLsxYDHbuU63ffLHN7wRwIALJY6VqzcJWZX3fhCztX7AqOkgc7CetfPg==
 
-"@shopify/shop-minis-cli@0.0.121":
-  version "0.0.121"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.121.tgz#814f1c28ef0f049358bd6f42c4cabb460c5459c1"
-  integrity sha512-VF6kPY9wzj71d9vPHfJVU4PxWTxA6eK4g5Fmsx9LrqcY780HMBLjF+Wu68Hnq0mjAAdYoC9nLj1rc2ef7upW2Q==
+"@shopify/shop-minis-cli@0.0.124":
+  version "0.0.124"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.124.tgz#63633ab316736290ab6800e78a4c92224d6d6708"
+  integrity sha512-2zVHHNX/3MkJn0XEf7ELvLw/mGdicaK0u3I/rdcOQfZoQCsmmbhEl+mBPTmzX928UYNBAYI/5Q7BA9xde6ydHw==
   dependencies:
     "@google-cloud/storage" "^7.10.0"
     "@inquirer/editor" "^1.2.4"
@@ -2878,15 +2878,15 @@
     serve-static "^1.15.0"
     suppress-experimental-warnings "^1.1.17"
 
-"@shopify/shop-minis-platform-sdk@0.0.0-snapshot.20240729092807":
-  version "0.0.0-snapshot.20240729092807"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.0.0-snapshot.20240729092807.tgz#64dad150a577eeb34e18e0336132a3240aa200f9"
-  integrity sha512-j/qmD82nwfrDyEWnCrA8Pg+YkoztK4MrMpghHjCQTVgn8E6kR3mn/SlLpRXS9/mOG6PwTWBJX67Xw5PiNvAxTg==
+"@shopify/shop-minis-platform-sdk@0.1.107":
+  version "0.1.107"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.107.tgz#620cbcdb46415b8993c89d56cf873f9e2ae625b6"
+  integrity sha512-e+vJZ7BPMOnmZy6Lp8/3vpxDBO+f78EjjnwncLoALN/1+TOGQQnIxKwkPwRsXTAGXM667/GKDsr5cAmlpqRqUA==
 
-"@shopify/shop-minis-runtime@0.0.0-snapshot.20240729092853":
-  version "0.0.0-snapshot.20240729092853"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.0-snapshot.20240729092853.tgz#bc87f22b770f19487465cddbe554fa7dc41e672e"
-  integrity sha512-wwyQjtWAKsj7RwehdLYrNC7/LH0JiWMFw0gOwvF7gObtBuPUHf0SaNFdacNkxk6v5/BuOhelFS+WM5iviPeP3w==
+"@shopify/shop-minis-runtime@0.0.114":
+  version "0.0.114"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.114.tgz#18a59f0b94403358ce596b0e57dc8110117cfc38"
+  integrity sha512-47FjiGyHIf5hR6YC5pbLDc9JICRKs62eioWok29D1c/neEoQd29jM3b29TEAjODn5uw4rqpS6LAVXO7iGR1K+A==
   dependencies:
     "@apollo/client" "3.7.17"
     "@babel/core" "7.24.5"
