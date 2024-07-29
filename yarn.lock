@@ -2878,15 +2878,15 @@
     serve-static "^1.15.0"
     suppress-experimental-warnings "^1.1.17"
 
-"@shopify/shop-minis-platform-sdk@0.1.105":
-  version "0.1.105"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.105.tgz#4b4a77a345693aff4ecc74d396cadfa86179553c"
-  integrity sha512-x0oLOAJUCQq1RYnrj6gl2L/Ip+aDj/w6MQdS78yV8E7qv03Q9wRbD2sAcfULTmC4+KjD18ikB9ImF2fL8edeIQ==
+"@shopify/shop-minis-platform-sdk@0.0.0-snapshot.20240729092807":
+  version "0.0.0-snapshot.20240729092807"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.0.0-snapshot.20240729092807.tgz#64dad150a577eeb34e18e0336132a3240aa200f9"
+  integrity sha512-j/qmD82nwfrDyEWnCrA8Pg+YkoztK4MrMpghHjCQTVgn8E6kR3mn/SlLpRXS9/mOG6PwTWBJX67Xw5PiNvAxTg==
 
-"@shopify/shop-minis-runtime@0.0.110":
-  version "0.0.110"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.110.tgz#5f7bc97c41e56d548953d2b3f0f135f8e33b4202"
-  integrity sha512-1sav0WZRZAh7x4oaQm5RnkQT9T75BGDmqFCW0kuNsbokMaySGoDhxyt8j1wRATrr7s1jF/apDs+OiT8douo2MA==
+"@shopify/shop-minis-runtime@0.0.0-snapshot.20240729092853":
+  version "0.0.0-snapshot.20240729092853"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.0-snapshot.20240729092853.tgz#bc87f22b770f19487465cddbe554fa7dc41e672e"
+  integrity sha512-wwyQjtWAKsj7RwehdLYrNC7/LH0JiWMFw0gOwvF7gObtBuPUHf0SaNFdacNkxk6v5/BuOhelFS+WM5iviPeP3w==
   dependencies:
     "@apollo/client" "3.7.17"
     "@babel/core" "7.24.5"
@@ -2946,7 +2946,7 @@
     react-native-video "6.0.0-beta.4"
     react-native-webview "11.26.1"
     react-test-renderer "18.2.0"
-    typescript "5.5.0-beta"
+    typescript "5.5.4"
     url-parse "1.5.10"
 
 "@sideway/address@^4.1.5":
@@ -12676,10 +12676,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@5.5.0-beta:
-  version "5.5.0-beta"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.0-beta.tgz#ae6a2e3aa277f74478f1743e8771676cddfcdbec"
-  integrity sha512-FRg3e/aQg3olEG3ff8YjHOERsO4IM0m4qGrsE4UMvILaq4TdDZ6gQX4+2Rq9SjTpfSe/ebwiHcsjm/7FfWWQ6Q==
+typescript@5.5.4:
+  version "5.5.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
+  integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
