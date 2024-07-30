@@ -17,7 +17,7 @@
     "@shopify/shop-minis-runtime": "0.0.114"
   },
   "devDependencies": {
-    "@shopify/shop-minis-cli": "0.0.124",
+    "@shopify/shop-minis-cli": "0.0.125",
     "@types/jest": "^29.2.6",
     "babel-jest": "^26.6.3",
     "eslint": "^8.32.0",
