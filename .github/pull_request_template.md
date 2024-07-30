@@ -6,16 +6,11 @@
 
 <!-- If this PR addresses or is related to an existing issue, please link to it. -->
 <!-- If this PR creates a new component, it's mandatory that you link the approved 'New Component Proposal' ticket -->
-- Issue: #[issue_number]
+Issue: #[issue_number]
 
-## Checklist
+## Screenshots
 
-<!-- Please ensure that the following tasks are completed before submitting your PR. -->
-- [ ] I have read and understood the [Contribution Guidelines](../../docs/CONTRIBUTING.md).
-- [ ] I have followed the [Design Guidelines](../../docs/DESIGN_GUIDELINES.md).
-- [ ] I have followed the [Code Guidelines](../../docs/CODE_GUIDELINES.md).
-- [ ] I have added necessary documentation (if applicable).
-- [ ] I have ensured that my code follows the project's coding standards.
+<!-- If applicable, include screenshots/recordings to illustrate the visual changes introduced by this PR. -->
 
 ## Implementation Details
 
@@ -25,14 +20,6 @@
   - Feature 1
   - Feature 2
   - Feature 3
-
-## Screenshots / Visual Changes
-
-<!-- If applicable, include screenshots/recordings to illustrate the visual changes introduced by this PR. -->
-- Before:
-  ![Before Screenshot](link_to_before_screenshot)
-- After:
-  ![After Screenshot](link_to_after_screenshot)
 
 ## Testing Instructions
 
@@ -44,8 +31,16 @@
 ## Additional Notes
 
 <!-- Include any additional information or context that reviewers should be aware of. -->
-- Any known issues or limitations
-- Dependencies or related PRs
+<!-- Include any known issues, limitations, dependencies or related PRs -->
+
+## Checklist
+
+<!-- Please ensure that the following tasks are completed before submitting your PR. -->
+- [ ] I have read and understood the [Contribution Guidelines](../../docs/CONTRIBUTING.md).
+- [ ] I have followed the [Design Guidelines](../../docs/DESIGN_GUIDELINES.md).
+- [ ] I have followed the [Code Guidelines](../../docs/CODE_GUIDELINES.md).
+- [ ] I have added necessary documentation (if applicable).
+- [ ] I have ensured that my code follows the project's coding standards.
 
 ## Reviewer Checklist
 
