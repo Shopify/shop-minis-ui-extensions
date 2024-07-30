@@ -123,10 +123,22 @@ export const FIXTURE_PRODUCT: ProductsCarouselProduct = {
   ],
 }
 
+const FIXTURE_PRODUCT_2: ProductsCarouselProduct = {
+  ...FIXTURE_PRODUCT,
+  id: 'gid://shopify/Product/7922581602559-2',
+  title: 'The Hero Snowboard 2',
+}
+
+const FIXTURE_PRODUCT_3: ProductsCarouselProduct = {
+  ...FIXTURE_PRODUCT,
+  id: 'gid://shopify/Product/7922581602559-3',
+  title: 'The Hero Snowboard 3',
+}
+
 export const FIXTURE_SHOP_GID = '62104633599'
 
 export const FIXTURE_PRODUCTS = [
   FIXTURE_PRODUCT,
-  FIXTURE_PRODUCT,
-  FIXTURE_PRODUCT,
+  FIXTURE_PRODUCT_2,
+  FIXTURE_PRODUCT_3,
 ]
