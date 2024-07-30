@@ -1,9 +1,9 @@
 {
-  "name": "Test Mini",
+  "name": "Minis Sandbox",
   "features": [
     "FULL_BLEED_VIEWER"
   ],
-  "handle": "test-mini",
+  "handle": "minis-sandbox",
   "icon_url": "https://cdn.shopify.com/shop-assets/minis/entry_points/687400209a45ba2e551d461317912ed07915e9de",
   "partner_name": "Shop Team",
   "shopify_apps": {
