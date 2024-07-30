@@ -35,5 +35,7 @@ If you saw any errors you can try to hard restart Shop and/or stop and re-run `y
 # Use your new extension
 
 Once your PR is merged a new version of https://www.npmjs.com/package/@shopify/shop-minis-ui-extensions will be published with your changes
+
 Back in your mini run `npx shop-minis upgrade` / `yarn shop-minis upgrade`
+
 Now you can import and use your extension
