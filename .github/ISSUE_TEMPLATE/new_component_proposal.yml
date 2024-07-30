@@ -1,0 +1,56 @@
+name: ✨ New Component Proposal
+description: Propose a new component
+labels: ["proposal"]
+
+body:
+  - type: input
+    id: component_name
+    attributes:
+      label: Component Name
+      description: What is the name of the proposed component?
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the component and its purpose.
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecases
+    attributes:
+      label: Use Cases
+      description: Describe the use cases for the component. How will it be used within the Shop Minis platform?
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Design Mockups
+      description: Attach or link to design mockups or sketches of the component.
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Key Features
+      description: List the key features and functionality of the component.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies or related components that the new component will interact with.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Include any additional information or context that reviewers should be aware of.

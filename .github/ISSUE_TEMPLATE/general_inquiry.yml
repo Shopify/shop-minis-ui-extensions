@@ -1,0 +1,21 @@
+name: ℹ️ General Inquiry
+description: Ask a question or make a general inquiry
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What is your question or inquiry?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any context or background information that might be relevant to your question.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Include any additional information or context that reviewers should be aware of.
