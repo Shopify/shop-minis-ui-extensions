@@ -24,6 +24,7 @@ Once you are familiar with the guidelines, you can propose a new UI component.
 
 After your proposal is approved, you can start building your UI component.
 
+- **Setup**: Follow the [Code Setup](./CODE_SETUP.md) guide to get your local dev environment running
 - **Build the Component**: Use the Shop Minis SDK components to build your UI extension.
 - **Test the Extension**: Ensure your extension works correctly by testing it using the Shop Minis CLI and opening the test Mini we provide.
 
