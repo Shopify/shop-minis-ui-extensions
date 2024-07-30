@@ -1,5 +1,3 @@
-# Pull Request Template
-
 ## Description
 
 <!-- Provide a brief description of the changes introduced by this PR. -->
@@ -7,7 +5,7 @@
 ## Related Issue
 
 <!-- If this PR addresses or is related to an existing issue, please link to it. -->
-<!-- If this PR creates a new component, it's mandatory that you link the approves 'New Component Proposal' ticket -->
+<!-- If this PR creates a new component, it's mandatory that you link the approved 'New Component Proposal' ticket -->
 - Issue: #[issue_number]
 
 ## Checklist
@@ -30,7 +28,7 @@
 
 ## Screenshots / Visual Changes
 
-<!-- If applicable, include screenshots or GIFs to illustrate the visual changes introduced by this PR. -->
+<!-- If applicable, include screenshots/recordings to illustrate the visual changes introduced by this PR. -->
 - Before:
   ![Before Screenshot](link_to_before_screenshot)
 - After:
