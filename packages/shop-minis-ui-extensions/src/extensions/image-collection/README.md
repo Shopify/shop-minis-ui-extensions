@@ -63,35 +63,8 @@ This component relies on the following external libraries:
 />
 ```
 
-| <img
-src='../../assets/extensions/image-collection.png'
-title="Image Collection Example"
-alt="Example of Image Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/> | <img
-src='../../assets/extensions/image-collection-carousel.png'
-title="Image Collection Example"
-alt="Example of Image Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/> |
-|:-----------------------------------------:|:-----------------------------------------:|
-| <img
-src='../../assets/extensions/image-collection-full.png'
-title="Full Image Collection Example"
-alt="Full example of Image Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/> | <img
-src='../../assets/extensions/image-collection-carousel-full.png'
-title="Full Image Collection Example"
-alt="Full example of Image Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/> |
+| ![Example of ImageCollection](../../assets/extensions/image-collection.png) | ![Example of ImageCollection](../../assets/extensions/image-collection-carousel.png) |
+|:----------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
 
+| ![Full example of ImageCollection](../../assets/extensions/image-collection-full.png) | ![Full example of ImageCollection](../../assets/extensions/image-collection-carousel-full.png) |
+|:--------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|

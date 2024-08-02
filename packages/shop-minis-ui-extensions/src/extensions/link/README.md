@@ -32,26 +32,10 @@ This component relies on the following external libraries:
   actionText="Action text"
 />
 ```
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{border: '1px solid', borderRadius: 16}}>
-<img
-src='../../assets/extensions/link.png'
-title="Interactive Link Example"
-alt="Example of interactive link"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-<br />
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
-src='../../assets/extensions/link-full.png'
-title="Interactive Link Full Example"
-alt="Full example of interactive link"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-</div>
+| ![Example of interactive Link](../../assets/extensions/link.png) |
+|:--------------------------------------------------------------:|
+| *Interactive Link Example*                                     |
+
+| ![Full example of interactive Link](../../assets/extensions/link-full.png) |
+|:------------------------------------------------------------------------:|
+| *Interactive Link Full Page Example*                                          |

@@ -41,29 +41,10 @@ This component relies on the following external libraries:
   image={{ uri: "https://example.com/default-card.jpg" }}
 />
 ```
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{border: '1px solid', borderRadius: 16}}>
-<img
-src='../../assets/extensions/default-card.png'
-title="Target Policies"
-alt="Example of target"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-<br />
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
-src='../../assets/extensions/default-card-full.png'
-title="Target Policies"
-alt="Example of target"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-</div>
+| ![Example of DefaultCard](../../assets/extensions/default-card.png) |
+|:-------------------------------------------------------------:|
+| *DefaultCard example*                                             |
 
-
-
+| ![Example of DefaultCard](../../assets/extensions/default-card-full.png) |
+|:------------------------------------------------------------------:|
+| *Full Page DefaultCard example*                                                  |

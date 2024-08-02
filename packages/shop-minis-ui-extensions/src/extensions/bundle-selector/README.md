@@ -57,26 +57,10 @@ This component relies on the following external libraries:
 />
 ```
 
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{border: '1px solid', borderRadius: 16}}>
-<img
-src='../../assets/extensions/bundle-selector.png'
-title="Bundle Selector Example"
-alt="Example of Bundle Selector"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-<br />
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
-src='../../assets/extensions/bundle-selector-full.png'
-title="Full Bundle Selector Example"
-alt="Full example of Bundle Selector"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-</div>
+| ![Example of Bundle Selector](../../assets/extensions/bundle-selector.png) |
+|:--------------------------------------------------------------------------:|
+| *Bundle Selector Example*                                                  |
+
+| ![Full example of Bundle Selector](../../assets/extensions/bundle-selector-full.png) |
+|:------------------------------------------------------------------------------------:|
+| *Full Page Bundle Selector Example*                                                       |

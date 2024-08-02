@@ -57,26 +57,10 @@ This component relies on the following external libraries:
   title="Video Collection Extension"
 />
 ```
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{border: '1px solid', borderRadius: 16}}>
-<img
-src='../../assets/extensions/video-collection.png'
-title="Product Offer Card Example"
-alt="Example of Product Offer Card"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-<br />
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
-src='../../assets/extensions/video-collection-full.png'
-title="Full Product Offer Card Example"
-alt="Full example of Product Offer Card"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-</div>
+| ![Example of VideoCollection](../../assets/extensions/video-collection.png) |
+|:------------------------------------------------------------------------------:|
+| *VideoCollection Example*                                                   |
+
+| ![Full example of VideoCollection](../../assets/extensions/video-collection-full.png) |
+|:---------------------------------------------------------------------------------------:|
+| *Full Page VideoCollection Example*                                                       |

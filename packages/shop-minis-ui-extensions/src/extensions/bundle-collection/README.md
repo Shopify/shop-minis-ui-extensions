@@ -64,26 +64,10 @@ This component relies on the following external libraries:
   ]}
 />
 ```
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{border: '1px solid', borderRadius: 16}}>
-<img
-src='../../assets/extensions/bundle-collection.png'
-title="Bundle Collection Example"
-alt="Example of Bundle Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-<br />
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
-src='../../assets/extensions/bundle-collection-full.png'
-title="Full Bundle Collection Example"
-alt="Full example of Bundle Collection"
-loading="eager"
-width="390"
-style={{borderRadius: 16}}
-/>
-</div>
-</div>
+| ![Example of Bundle Collection](../../assets/extensions/bundle-collection.png) |
+|:------------------------------------------------------------------------------:|
+| *Bundle Collection Example*                                                    |
+
+| ![Full example of Bundle Collection](../../assets/extensions/bundle-collection-full.png) |
+|:----------------------------------------------------------------------------------------:|
+| *Full Bundle Collection Example*                                                         |
