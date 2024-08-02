@@ -1,17 +1,24 @@
-import {render, fireEvent} from '@testing-library/react-native'
+import {ComponentProps} from 'react'
+import {fireEvent} from '@testing-library/react-native'
+
+import {render} from '../../../test-utils/render'
 
 import {BundleItem} from './BundleItem'
 
 describe('BundleItem', () => {
-  const mockProps = {
-    title: 'Test Bundle',
-    subtitle: 'Test Subtitle',
-    imageUrls: ['image1.jpg', 'image2.jpg'],
-    badgeText: 'New',
-    actionButtonText: 'Add to Cart',
-    onActionButtonPress: jest.fn(),
-    uniqueItem: true,
-  }
+  let mockProps: ComponentProps<typeof BundleItem>
+
+  beforeEach(() => {
+    mockProps = {
+      title: 'Test Bundle',
+      subtitle: 'Test Subtitle',
+      imageUrls: ['image1.jpg', 'image2.jpg'],
+      badgeText: 'New',
+      actionButtonText: 'Add to Cart',
+      onActionButtonPress: jest.fn(),
+      uniqueItem: true,
+    }
+  })
 
   it('renders the title and subtitle correctly', () => {
     const {getByText} = render(<BundleItem {...mockProps} />)
@@ -38,7 +45,7 @@ describe('BundleItem', () => {
 
   it('renders the correct number of images', () => {
     const {getAllByTestId} = render(<BundleItem {...mockProps} />)
-    const images = getAllByTestId('bundle-item-image')
+    const images = getAllByTestId('collage-image')
     expect(images.length).toBe(2)
   })
 })
