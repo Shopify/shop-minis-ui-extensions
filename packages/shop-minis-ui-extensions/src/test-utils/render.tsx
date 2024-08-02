@@ -14,6 +14,7 @@ function customRender<T>(ui: React.ReactElement<T>) {
   return render(ui, {wrapper: Providers})
 }
 
+// eslint-disable-next-line no-restricted-imports
 export * from '@testing-library/react-native'
 
 export {customRender as render}

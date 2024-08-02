@@ -9,7 +9,7 @@
   "scripts": {
     "fixture-mini": "CUSTOM_BASE_PATH=\"./packages/fixture-mini/\" shop-minis",
     "test": "jest",
-    "lint": "eslint .",
+    "lint": "eslint packages/shop-minis-ui-extensions/src/",
     "bump-minis-libs": "yarn add --exact -W @shopify/shop-minis-platform-sdk@latest @shopify/shop-minis-runtime@latest @shopify/shop-minis-cli@latest"
   },
   "dependencies": {
