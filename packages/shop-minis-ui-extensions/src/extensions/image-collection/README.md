@@ -62,50 +62,36 @@ This component relies on the following external libraries:
   layout="CAROUSEL"
 />
 ```
-<div style={{display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-<div style={{display: 'flex', flexDirection: 'row', width: '100%'}}>
-<div style={{border: '1px solid', borderRadius: 16, marginRight: 8}}>
-<img
+
+| <img
 src='../../assets/extensions/image-collection.png'
 title="Image Collection Example"
 alt="Example of Image Collection"
 loading="eager"
 width="390"
 style={{borderRadius: 16}}
-/>
-</div>
-<div style={{border: '1px solid', borderRadius: 16, alignSelf: 'center'}}>
-<img
+/> | <img
 src='../../assets/extensions/image-collection-carousel.png'
 title="Image Collection Example"
 alt="Example of Image Collection"
 loading="eager"
 width="390"
 style={{borderRadius: 16}}
-/>
-</div>
-</div>
-<br />
-<div style={{display: 'flex', flexDirection: 'row', width: '100%'}}>
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888', marginRight: 8}}>
-<img
+/> |
+|:-----------------------------------------:|:-----------------------------------------:|
+| <img
 src='../../assets/extensions/image-collection-full.png'
 title="Full Image Collection Example"
 alt="Full example of Image Collection"
 loading="eager"
 width="390"
 style={{borderRadius: 16}}
-/>
-</div>
-<div style={{border: '1px solid', borderRadius: 16, boxShadow: '5px 5px #888888'}}>
-<img
+/> | <img
 src='../../assets/extensions/image-collection-carousel-full.png'
 title="Full Image Collection Example"
 alt="Full example of Image Collection"
 loading="eager"
 width="390"
 style={{borderRadius: 16}}
-/>
-</div>
-</div>
-</div>
+/> |
+
