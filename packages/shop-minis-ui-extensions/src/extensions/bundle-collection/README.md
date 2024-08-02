@@ -1,6 +1,5 @@
 # BundleCollection
 
-#### Overview
 The `BundleCollection` component is designed to display a carousel of product bundle cards within a React Native application, utilizing the Shop Minis Platform SDK. Each card in the carousel showcases details such as the bundle's title, subtitle, images, a badge, and an action button. This component is ideal for promoting various product bundles in an engaging and interactive manner.
 
 #### Props
@@ -15,36 +14,12 @@ The component accepts the following props structured as `BundleUpsellData`:
   - **actionCallback** (`() => void`): A callback function that is invoked when the action button is pressed.
 - **title** (`string`, optional): The title to be displayed above the bundle carousel. Defaults to "Mix and match" if not provided.
 
-#### Usage
+#### Example
 ```jsx
 import { BundleCollection } from '@shopify/shop-minis-ui-extensions'
 
 ...
 
-<BundleCollection
-  title="Explore Our Bundles"
-  bundles={[
-    {
-      title: "Winter Essentials",
-      subtitle: "Everything you need for the cold season",
-      images: ["path/to/image1.jpg", "path/to/image2.jpg"],
-      badgeText: "20% Off",
-      actionButtonText: "View Bundle",
-      actionCallback: () => console.log("Bundle selected")
-    }
-  ]}
-/>
-```
-
-#### Dependencies
-
-This component relies on the following external libraries:
-
-- **React** (`react`): A JavaScript library for building user interfaces. Ensure you are using version 16.8 or higher due to hooks support.
-- **Shopify Minis Platform SDK** (`@shopify/shop-minis-platform-sdk`): Provides the necessary SDK for integrating with Shopify's mini-apps platform. Version 1.2.3 or higher is recommended.
-
-#### Example
-```jsx
 <BundleCollection
   title="Mix and Match"
   bundles={[
@@ -64,10 +39,10 @@ This component relies on the following external libraries:
   ]}
 />
 ```
-| ![Example of Bundle Collection](../../assets/extensions/bundle-collection.png) |
+| <img src="../../assets/extensions/bundle-collection.png" alt="Example of BundleCollection" width="390" /> |
 |:------------------------------------------------------------------------------:|
-| *Bundle Collection Example*                                                    |
+| *BundleCollection Example*                                                    |
 
-| ![Full example of Bundle Collection](../../assets/extensions/bundle-collection-full.png) |
+| <img src="../../assets/extensions/bundle-collection-full.png" alt="Example of BundleCollection" width="390" /> |
 |:----------------------------------------------------------------------------------------:|
-| *Full Bundle Collection Example*                                                         |
+| *ProductPage BundleCollection Example*                                                         |
