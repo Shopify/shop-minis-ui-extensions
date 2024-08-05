@@ -44,8 +44,7 @@ The component accepts the following props structured as `BundleUpsellData`:
   - **actionCallback** (`() => void`): A callback function that is invoked when the action button is pressed.
 - **title** (`string`, optional): The title to be displayed above the bundle carousel. Defaults to "Mix and match" if not provided.
 
-### Example BundleCollection rendered in ProductPage
 
 | <img src="../../assets/extensions/bundle-collection-full.png" alt="Example of BundleCollection" width="390" /> |
 |:----------------------------------------------------------------------------------------:|
-| *ProductPage BundleCollection Example*                                                         |
+| *BundleCollection in ProductPage*                                                         |

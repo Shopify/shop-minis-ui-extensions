@@ -2,21 +2,11 @@
 
 The `ProductOfferCard` component is designed to display a promotional or discount offer related to a product within a React Native application, utilizing the Shop Minis Platform SDK. It showcases product details such as the discounted price, original price, and an optional expiry date, along with an image of the product.
 
-#### Props
-The component accepts the following props structured as `ProductOfferCardData`:
+| <img src="../../assets/extensions/product-offer-card.png" alt="Example of BundleCollection" width="390" /> |
+|:-------------------------------------------------------------------------------:|
+| *ProductOfferCard Example*                                                    |
 
-- **product** (`Product`): Information about the product. This object should conform to the `Product` type defined in your project.
-- **order** (`Order`): Details about the order associated with the product. This object should conform to the `Order` type.
-- **offer** (`object`): Details about the offer including:
-  - **discountedPrice** (`Price`): The discounted price of the product.
-  - **originalPrice** (`Price`): The original price of the product.
-  - **variantId** (`string`, optional): The variant ID of the product, if applicable.
-  - **title** (`string`, optional): The title of the offer.
-  - **expiresAt** (`Date`, optional): The expiration date of the offer.
-  - **image** (`Image`): An image representing the product or offer.
-
-
-#### Example
+### Example
 ```jsx
 import { ProductOfferCard } from '@shopify/shop-minis-ui-extensions'
 
@@ -34,10 +24,20 @@ import { ProductOfferCard } from '@shopify/shop-minis-ui-extensions'
   }}
 />
 ```
-| <img src="../../assets/extensions/product-offer-card.png" alt="Example of BundleCollection" width="390" /> |
-|:-------------------------------------------------------------------------------:|
-| *ProductOfferCard Example*                                                    |
+
+### Props
+The component accepts the following props structured as `ProductOfferCardData`:
+
+- **product** (`Product`): Information about the product. This object should conform to the `Product` type defined in your project.
+- **order** (`Order`): Details about the order associated with the product. This object should conform to the `Order` type.
+- **offer** (`object`): Details about the offer including:
+  - **discountedPrice** (`Price`): The discounted price of the product.
+  - **originalPrice** (`Price`): The original price of the product.
+  - **variantId** (`string`, optional): The variant ID of the product, if applicable.
+  - **title** (`string`, optional): The title of the offer.
+  - **expiresAt** (`Date`, optional): The expiration date of the offer.
+  - **image** (`Image`): An image representing the product or offer.
 
 | <img src="../../assets/extensions/product-offer-card-full.png" alt="Example of BundleCollection" width="390" /> |
 |:----------------------------------------------------------------------------------------:|
-| *Product Page ProductOfferCard Example*                                                        |
+| *ProductOfferCard in ProductPage*                                                        |
