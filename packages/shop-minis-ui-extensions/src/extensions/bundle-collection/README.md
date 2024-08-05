@@ -6,7 +6,7 @@ The `BundleCollection` component is designed to display a carousel of product bu
 |:------------------------------------------------------------------------------:|
 | *BundleCollection Example*                                                    |
 
-## Example
+### Example
 ```jsx
 import { BundleCollection } from '@shopify/shop-minis-ui-extensions'
 
@@ -32,7 +32,7 @@ import { BundleCollection } from '@shopify/shop-minis-ui-extensions'
 />
 ```
 
-## Props
+### Props
 The component accepts the following props structured as `BundleUpsellData`:
 
 - **bundles** (`BundleItem[]`): An array of `BundleItem` objects, each representing a product bundle. Each `BundleItem` includes:
@@ -44,7 +44,7 @@ The component accepts the following props structured as `BundleUpsellData`:
   - **actionCallback** (`() => void`): A callback function that is invoked when the action button is pressed.
 - **title** (`string`, optional): The title to be displayed above the bundle carousel. Defaults to "Mix and match" if not provided.
 
-## Example BundleCollection rendered in ProductPage
+### Example BundleCollection rendered in ProductPage
 
 | <img src="../../assets/extensions/bundle-collection-full.png" alt="Example of BundleCollection" width="390" /> |
 |:----------------------------------------------------------------------------------------:|
