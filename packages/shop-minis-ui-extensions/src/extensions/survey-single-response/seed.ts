@@ -1,4 +1,6 @@
-export const CHOICES = [
+import {ChoiceOption} from './types'
+
+export const CHOICES: ChoiceOption[] = [
   {label: 'Google', value: 'google'},
   {label: 'Facebook', value: 'facebook'},
   {label: 'Pinterest', value: 'pinterest'},
