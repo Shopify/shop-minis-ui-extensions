@@ -51,6 +51,7 @@ const CollageImage = ({
             height="100%"
             resizeMode="cover"
             onError={onImageError}
+            testID="collage-image"
           />
 
           <Box
