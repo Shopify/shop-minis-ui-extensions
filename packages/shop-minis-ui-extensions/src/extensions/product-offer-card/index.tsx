@@ -1,6 +1,6 @@
 import {useCallback} from 'react'
 import {Box, ExtensionProviders} from '@shopify/shop-minis-platform-sdk'
-import {useExtensionShopActions} from '@shopify/shop-minis-platform-sdk/actions'
+import {useShopActions} from '@shopify/shop-minis-platform-sdk/actions'
 
 import {Image, Order, Price, Product} from '../types'
 
@@ -17,24 +17,31 @@ export interface ProductOfferCardData {
     expiresAt?: Date
     image: Image
   }
+  onPress?: () => void
 }
 
 export function ProductOfferCard({
   product: _product,
   offer,
   order: _order,
+  onPress,
 }: ProductOfferCardData) {
-  const {openMiniViewer} = useExtensionShopActions()
+  const {openMiniViewer} = useShopActions()
 
-  const onPress = useCallback(async () => {
+  const onPressHandler = useCallback(async () => {
+    if (onPress) {
+      onPress()
+      return
+    }
+
     openMiniViewer()
-  }, [openMiniViewer])
+  }, [onPress, openMiniViewer])
 
   return (
     <ExtensionProviders>
       <Box>
         <ProductOfferCardView
-          onPress={onPress}
+          onPress={onPressHandler}
           discountedPrice={offer.discountedPrice}
           originalPrice={offer.originalPrice}
           image={offer.image}
