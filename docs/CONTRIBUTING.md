@@ -16,7 +16,7 @@ Before you start contributing, it's essential to familiarize yourself with our d
 
 Once you are familiar with the guidelines, you can propose a new UI component.
 
-- **Create a Proposal Issue**: Use the [New Component Proposal](../.github/ISSUE_TEMPLATE/new_component_proposal.md) issue template to submit your proposal.
+- **Create a Proposal Issue**: Use the [New Component Proposal](../.github/ISSUE_TEMPLATE/new_component_proposal.yml) issue template to submit your proposal.
 - **Review by UX Team**: Our UX team will review your proposal and provide feedback or approval.
 - **Approval/Rejection**: You will be notified if your proposal is approved or if changes are needed.
 
