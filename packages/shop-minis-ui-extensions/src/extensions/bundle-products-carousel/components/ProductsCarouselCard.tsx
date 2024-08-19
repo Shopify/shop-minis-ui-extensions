@@ -5,8 +5,12 @@ import {
   ProductOption,
   Variant,
   Button,
+  theme,
 } from '@shopify/shop-minis-platform-sdk'
 import {ComponentProps, useCallback, useState} from 'react'
+import {Dimensions} from 'react-native'
+
+const {width: SCREEN_WIDTH} = Dimensions.get('screen')
 
 type ProductCardProduct = ComponentProps<typeof ProductCard>['product']
 
@@ -19,7 +23,8 @@ export interface ProductsCarouselProduct extends ProductCardProduct {
   defaultVariant: ProductsCarouselProductVariant
 }
 
-const CAROUSEL_CARD_DEFAULT_WIDTH = 150
+const CAROUSEL_CARD_DEFAULT_WIDTH = SCREEN_WIDTH / 2.5
+const CAROUSEL_CARD_UNIT_WIDTH = SCREEN_WIDTH / 2 - theme.spacing.gutter
 
 export function ProductsCarouselCard({
   product,
@@ -61,7 +66,9 @@ export function ProductsCarouselCard({
     <Box
       key={product.id}
       flex={fixedWidth ? undefined : 1}
-      maxWidth={fixedWidth ? CAROUSEL_CARD_DEFAULT_WIDTH : undefined}
+      maxWidth={
+        fixedWidth ? CAROUSEL_CARD_UNIT_WIDTH : CAROUSEL_CARD_DEFAULT_WIDTH
+      }
     >
       <ProductCard
         product={product}
