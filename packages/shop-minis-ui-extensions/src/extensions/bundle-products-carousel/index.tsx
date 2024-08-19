@@ -54,9 +54,10 @@ export function BundleProductsCarousel({
               marginRight={cardsShouldScroll ? 'none' : 'gutter'}
               marginTop="xxs"
             >
-              {products.map(product => (
+              {products.map((product, index) => (
                 <ProductsCarouselCard
-                  key={product.id}
+                  // eslint-disable-next-line react/no-array-index-key
+                  key={`${product.id}-${index}`}
                   product={product}
                   onProductAddedToBundle={onProductAddedToBundle}
                   onProductRemovedFromBundle={onProductRemovedFromBundle}
