@@ -2887,6 +2887,7 @@
   version "0.0.115"
   resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.115.tgz#f574f212590d7c357b643e436367fe08a72102f3"
   integrity sha512-eX37xqLtc/FQyjtUOW6oBsbGLQ5Nl5eP2t5Uv8JWW9S/13SabC0QLeo4ISGg97ILq6om73ynSv4M5UkWRdm45Q==
+  
   dependencies:
     "@apollo/client" "3.7.17"
     "@babel/core" "7.24.5"
