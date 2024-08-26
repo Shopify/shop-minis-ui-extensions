@@ -38,7 +38,7 @@ export function BundleProductsCarousel({
 
   return (
     <ExtensionProviders>
-      <Box marginTop="s">
+      <Box marginTop="s" gap="xxs">
         <Text variant="bodyTitleLarge">{title}</Text>
         {subtitle ? (
           <Text variant="bodySmall" color="foregrounds-subdued">
@@ -52,7 +52,7 @@ export function BundleProductsCarousel({
               gap="xs"
               marginLeft="gutter"
               marginRight={cardsShouldScroll ? 'none' : 'gutter'}
-              marginTop="xxs"
+              marginTop="xs-s"
             >
               {products.map((product, index) => (
                 <ProductsCarouselCard
