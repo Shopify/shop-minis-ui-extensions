@@ -38,7 +38,7 @@ export function BundleProductsCarousel({
 
   return (
     <ExtensionProviders>
-      <Box marginTop="xs">
+      <Box marginTop="s" gap="xxs">
         <Text variant="bodyTitleLarge">{title}</Text>
         {subtitle ? (
           <Text variant="bodySmall" color="foregrounds-subdued">
@@ -52,7 +52,7 @@ export function BundleProductsCarousel({
               gap="xs"
               marginLeft="gutter"
               marginRight={cardsShouldScroll ? 'none' : 'gutter'}
-              marginTop="xxs"
+              marginTop="xs-s"
             >
               {products.map((product, index) => (
                 <ProductsCarouselCard
@@ -62,7 +62,7 @@ export function BundleProductsCarousel({
                   onProductAddedToBundle={onProductAddedToBundle}
                   onProductRemovedFromBundle={onProductRemovedFromBundle}
                   shopId={shopId}
-                  fixedWidth={products.length !== 2} // when we have two products each card dynamically takes 50% width
+                  fixedWidth={products.length <= 2} // when we have two products or less each card dynamically takes 50% width
                 />
               ))}
             </Box>
