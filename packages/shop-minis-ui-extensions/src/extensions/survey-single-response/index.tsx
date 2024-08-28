@@ -72,32 +72,6 @@ export function SurveySingleResponse({
     [onChoiceSelected]
   )
 
-  const renderChoice = useCallback(
-    (choice: ChoiceOption, index: number) => {
-      if (singleQuestionSurvey && choice !== seeMoreChoice) {
-        return (
-          <RadioButton
-            size="l"
-            active={selectedIndex === index}
-            text={choice.label}
-            onPress={() => handleChoiceSelection(index, choice.value)}
-          />
-        )
-      }
-      return (
-        <Button
-          text={choice.label}
-          variant="tertiary"
-          size="l"
-          textAlign="left"
-          rightIcon="chevron-right"
-          onPress={() => handleChoiceSelection(index, choice.value)}
-        />
-      )
-    },
-    [singleQuestionSurvey, seeMoreChoice, selectedIndex, handleChoiceSelection]
-  )
-
   return (
     <ExtensionProviders>
       <Box marginTop="m">
@@ -105,7 +79,23 @@ export function SurveySingleResponse({
         <Box marginTop="s">
           {limitedChoices.map((choice, index) => (
             <Box marginVertical="xxs" key={choice.value}>
-              {renderChoice(choice, index)}
+              {singleQuestionSurvey && choice !== seeMoreChoice ? (
+                <RadioButton
+                  size="l"
+                  active={selectedIndex === index}
+                  text={choice.label}
+                  onPress={() => handleChoiceSelection(index, choice.value)}
+                />
+              ) : (
+                <Button
+                  text={choice.label}
+                  variant="tertiary"
+                  size="l"
+                  textAlign="left"
+                  rightIcon="chevron-right"
+                  onPress={() => handleChoiceSelection(index, choice.value)}
+                />
+              )}
             </Box>
           ))}
         </Box>
