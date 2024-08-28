@@ -7,7 +7,7 @@ import {
   Button,
 } from '@shopify/shop-minis-platform-sdk'
 
-import {SurveySingleResponseProps} from './types'
+import {SurveySingleResponseProps, ChoiceOption} from './types'
 import {CHOICES} from './seed'
 
 const MAX_CHOICES = 5
@@ -15,9 +15,14 @@ const MAX_CHOICES = 5
 /**
  * SurveySingleResponse is a component used to display a single-choice survey question.
  *
- * The component presents a list of up to 5 choices to the user, allowing them to select one option.
- * If more than 5 choices are provided, only the first 4 are displayed among the seeMoreChoice.
- * After selection, it shows a completion message and offers the option to restart the survey.
+ * The component presents a list of choices to the user, allowing them to select one option.
+ * If more than 5 choices are provided, only the first 4 are displayed along with a "See More" option.
+ *
+ * The display of choices depends on the `singleQuestionSurvey` prop:
+ * - If `true`: Choices are displayed as radio buttons, suitable for a single-question survey where
+ *   the user's selection is the final action.
+ * - If `false`: Choices are displayed as buttons with chevrons, indicating that selecting an option
+ *   will lead to a follow-up question or screen in the full-screen Mini viewer.
  *
  * @component
  * @example
@@ -29,20 +34,26 @@ const MAX_CHOICES = 5
  *   ]}
  *   onChoiceSelected={(index, value) => console.log(index, value)}
  *   title="How did you find us?"
+ *   seeMoreChoice={{ label: 'Other', value: 'seeMore' }}
+ *   singleQuestionSurvey={true}
  * />
+
  *
  * @param {Object} props - The component props
- * @param {ChoiceOption[]} props.choices - An array of choices to be displayed in the survey (max 5)
+ * @param {ChoiceOption[]} [props.choices] - An array of choices to be displayed in the survey
  * @param {function} props.onChoiceSelected - Callback function invoked when a choice is selected.
  * It receives the index of the selected choice and its value as arguments.
- * @param {string} [props.title="How did you find about us?"] - The title of the survey question
- * @param {string} [props.subtitle] - An optional subtitle for additional context
+ * @param {string} [props.title] - The title of the survey question
+ * @param {ChoiceOption} [props.seeMoreChoice] - The choice to be displayed if there are more than MAX_CHOICES
+ * @param {boolean} [props.singleQuestionSurvey=false] - Determines the display style of choices:
+ * - true: Displays choices as radio buttons for a single-question survey
+ * - false: Displays choices as buttons with chevrons, indicating follow-up questions in a full-screen Mini viewer
  */
 export function SurveySingleResponse({
-  choices = CHOICES,
+  choices,
   onChoiceSelected,
-  seeMoreChoice = {label: 'Other', value: 'other'},
-  title = 'How did you find about us?',
+  seeMoreChoice,
+  title,
   singleQuestionSurvey = false,
 }: SurveySingleResponseProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | undefined>()
@@ -62,6 +73,32 @@ export function SurveySingleResponse({
     [onChoiceSelected]
   )
 
+  const renderChoice = useCallback(
+    (choice: ChoiceOption, index: number) => {
+      if (singleQuestionSurvey && choice !== seeMoreChoice) {
+        return (
+          <RadioButton
+            size="l"
+            active={selectedIndex === index}
+            text={choice.label}
+            onPress={() => handleChoiceSelection(index, choice.value)}
+          />
+        )
+      }
+      return (
+        <Button
+          text={choice.label}
+          variant="tertiary"
+          size="l"
+          textAlign="left"
+          rightIcon="chevron-right"
+          onPress={() => handleChoiceSelection(index, choice.value)}
+        />
+      )
+    },
+    [singleQuestionSurvey, seeMoreChoice, selectedIndex, handleChoiceSelection]
+  )
+
   return (
     <ExtensionProviders>
       <Box marginTop="m">
@@ -69,23 +106,7 @@ export function SurveySingleResponse({
         <Box marginTop="s">
           {limitedChoices.map((choice, index) => (
             <Box marginVertical="xxs" key={choice.value}>
-              {singleQuestionSurvey === false || choice === seeMoreChoice ? (
-                <Button
-                  text={choice.label}
-                  variant="tertiary"
-                  size="l"
-                  textAlign="left"
-                  rightIcon="chevron-right"
-                  onPress={() => handleChoiceSelection(index, choice.value)}
-                />
-              ) : (
-                <RadioButton
-                  size="l"
-                  active={selectedIndex === index}
-                  text={choice.label}
-                  onPress={() => handleChoiceSelection(index, choice.value)}
-                />
-              )}
+              {renderChoice(choice, index)}
             </Box>
           ))}
         </Box>
