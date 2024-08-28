@@ -8,7 +8,6 @@ import {
 } from '@shopify/shop-minis-platform-sdk'
 
 import {SurveySingleResponseProps, ChoiceOption} from './types'
-import {CHOICES} from './seed'
 
 const MAX_CHOICES = 5
 
