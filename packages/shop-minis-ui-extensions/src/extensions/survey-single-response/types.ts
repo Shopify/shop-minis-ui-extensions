@@ -10,7 +10,3 @@ export interface SurveySingleResponseProps {
   seeMoreChoice: ChoiceOption
   singleQuestionSurvey: boolean
 }
-
-export interface SurveyCompletedViewProps {
-  onRestart: () => void
-}
