@@ -4,10 +4,11 @@ export interface ChoiceOption {
 }
 
 export interface SurveySingleResponseProps {
+  choices: ChoiceOption[]
   onChoiceSelected: (index: number, value: string | number) => void
-  title?: string
-  subtitle?: string
-  otherOption?: ChoiceOption
+  title: string
+  seeMoreChoice: ChoiceOption
+  singleQuestionSurvey: boolean
 }
 
 export interface SurveyCompletedViewProps {
