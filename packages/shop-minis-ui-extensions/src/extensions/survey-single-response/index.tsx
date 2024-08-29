@@ -7,7 +7,7 @@ import {
   Button,
 } from '@shopify/shop-minis-platform-sdk'
 
-import {SurveySingleResponseProps, ChoiceOption} from './types'
+import {SurveySingleResponseProps} from './types'
 
 const MAX_CHOICES = 5
 
