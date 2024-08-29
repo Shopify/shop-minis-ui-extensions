@@ -2883,10 +2883,10 @@
   resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.109.tgz#6f7c08cdafac48a4be8695aa87a4a08859d684b2"
   integrity sha512-YPamhXBGBwirms87qL4W2NIBCsis+AFDGn911IfG4t5UGFeVxJodvD5zB8Q3Fo/Qwyq95J8stfvZf5ZI1ECf7w==
 
-"@shopify/shop-minis-runtime@0.0.115":
-  version "0.0.115"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.115.tgz#f574f212590d7c357b643e436367fe08a72102f3"
-  integrity sha512-eX37xqLtc/FQyjtUOW6oBsbGLQ5Nl5eP2t5Uv8JWW9S/13SabC0QLeo4ISGg97ILq6om73ynSv4M5UkWRdm45Q==
+"@shopify/shop-minis-runtime@0.0.117":
+  version "0.0.117"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-runtime/-/shop-minis-runtime-0.0.117.tgz#1493cffa2c5037305bb1322ae559a5f6e5b81eb6"
+  integrity sha512-6kb7QDEnBKz+WSj9C2OUfUeAa7P0CZXlk0JO3H52CKpfNrI0dE8Pavc6LhCZFJg51QCcO5Bmjwc+0OmzlkgRBg==
   dependencies:
     "@apollo/client" "3.7.17"
     "@babel/core" "7.24.5"
@@ -2933,6 +2933,7 @@
     react-native-gesture-handler "2.14.0"
     react-native-haptic-feedback "2.2.0"
     react-native-image-colors "1.5.2"
+    react-native-image-crop-picker "0.40.1"
     react-native-linear-gradient "2.8.3"
     react-native-localize "3.0.2"
     react-native-reanimated "3.8.0"
@@ -10937,6 +10938,11 @@ react-native-image-colors@1.5.2:
   integrity sha512-yGsxwjQZFL5fthNc/F8//sSH1WZtC0OmxN7HQhXE1gSH0ApldOMkl5njTTMnWSUT/t1iCCBZrANSj3gnw1UaOg==
   dependencies:
     node-vibrant "3.1.6"
+
+react-native-image-crop-picker@0.40.1:
+  version "0.40.1"
+  resolved "https://registry.yarnpkg.com/react-native-image-crop-picker/-/react-native-image-crop-picker-0.40.1.tgz#3b619d7af5f870aa676d7d5b06a276343b817c0f"
+  integrity sha512-rs7W4jrisOiQtRip5WG0N4bxhT1hr5TWSA8Mo2OrlZgIhvTU9gdIw63hKw35rbwzVAzDkPXOBsR3ZolsTBxqww==
 
 react-native-linear-gradient@2.8.3:
   version "2.8.3"
