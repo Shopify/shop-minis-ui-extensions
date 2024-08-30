@@ -29,5 +29,6 @@
   "resolutions": {
     "@apollo/federation": "0.38.1",
     "graphql": "15.8.0"
-  }
+  },
+  "version": "0.0.1"
 }
