@@ -32,7 +32,7 @@ After your proposal is approved, you can start building your UI component.
 
 Once your component is built and tested, you can submit it for review.
 
-- **Create a Pull Request (PR)**: Submit a PR to this repository with your new component. Use the [PR Template](../.github/PULL_REQUEST_TEMPLATE/pull_request_template.md) to ensure all necessary information is included.
+- **Create a Pull Request (PR)**: Submit a PR to this repository with your new component. Use the [PR Template](../.github/pull_request_template.md) to ensure all necessary information is included.
 - **Automated Checks**: Our CI/CD system will run automated tests and checks on your PR.
 - **Review by Shop Minis Team**: Our team will review your code and provide feedback or approval.
 - **Approval/Rejection**: You will be notified if your PR is approved and merged or if changes are needed.
@@ -62,7 +62,7 @@ We have several issue templates to help streamline the contribution process:
 
 ## Pull Request Template
 
-Please use the following [PR Template](../.github/PULL_REQUEST_TEMPLATE/pull_request_template.md) when submitting your pull request to ensure all necessary information is provided.
+Please use the following [PR Template](../.github/pull_request_template.md) when submitting your pull request to ensure all necessary information is provided.
 
 ## Communication and Support
 

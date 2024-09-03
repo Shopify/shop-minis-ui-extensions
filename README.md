@@ -13,7 +13,7 @@ To contribute to the Shop Minis UI Extensions project, please follow these steps
 1. **Orientation**: Familiarize yourself with our [Design Guidelines](docs/DESIGN_GUIDELINES.md) and [Code Guidelines](docs/CODE_GUIDELINES.md).
 2. **Proposal**: Submit a new component proposal using the [New Component Proposal Issue Template](.github/ISSUE_TEMPLATE/new_component_proposal.md).
 3. **Coding**: Once your proposal is approved, start building your component using the Shop Minis SDK components.
-4. **Submission**: Submit your component for review by creating a pull request using our [Pull Request Template](.github/PULL_REQUEST_TEMPLATE/pull_request_template.md).
+4. **Submission**: Submit your component for review by creating a pull request using our [Pull Request Template](.github/pull_request_template.md).
 
 ### Issue Templates
 
@@ -26,7 +26,7 @@ We have several issue templates to help streamline the contribution process:
 
 ### Pull Request Template
 
-Please use the following [Pull Request Template](.github/PULL_REQUEST_TEMPLATE/pull_request_template.md) when submitting your pull request to ensure all necessary information is provided.
+Please use the following [Pull Request Template](.github/pull_request_template.md) when submitting your pull request to ensure all necessary information is provided.
 
 ## Getting Started
 
