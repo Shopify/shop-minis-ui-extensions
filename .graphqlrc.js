@@ -5,7 +5,7 @@ const baseConfig = require('@shopify/shop-minis-runtime/graphqlrc')
 
 const clonedConfig = structuredClone(baseConfig)
 clonedConfig.projects.default.excludes = [
-  'node_modules/**',
+  '**/node_modules/**',
   'packages/fixture-mini/src/targets/**',
 ]
 
