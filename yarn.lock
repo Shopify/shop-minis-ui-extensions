@@ -2835,10 +2835,10 @@
   resolved "https://registry.yarnpkg.com/@shopify/restyle/-/restyle-2.4.4.tgz#a94dde4e7fcfa03bc5f06648b70ecf47caa661ba"
   integrity sha512-Y64T8pCSKZi7ChMMfCfe+EJJsqeF+lNLsxYDHbuU63ffLHN7wRwIALJY6VqzcJWZX3fhCztX7AqOkgc7CetfPg==
 
-"@shopify/shop-minis-cli@0.0.125":
-  version "0.0.125"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.125.tgz#c5dde79270becc726ca28aee8d4c413ef61b685a"
-  integrity sha512-bSALl9DvajcdYLHv6XrxEYJ6EMNyD0ThX8uoVwzQYYn6eBz4oaXp68l7lawIDAknmY8M9GUtpUNzmhR/dZ8kwQ==
+"@shopify/shop-minis-cli@0.0.133":
+  version "0.0.133"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-cli/-/shop-minis-cli-0.0.133.tgz#f77e72d3542adae3ddff43700ec03ae6879a9727"
+  integrity sha512-zwksZcQrIeJqkmUeTV5lWWwthamUrkAg8xiVNan+BidE69WsQ9MhATsU/s3LDVwM/vP1NZM4qMyo2xmz4Y8Gzg==
   dependencies:
     "@google-cloud/storage" "^7.10.0"
     "@inquirer/editor" "^1.2.4"
@@ -2878,10 +2878,10 @@
     serve-static "^1.15.0"
     suppress-experimental-warnings "^1.1.17"
 
-"@shopify/shop-minis-platform-sdk@0.1.109":
-  version "0.1.109"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.109.tgz#6f7c08cdafac48a4be8695aa87a4a08859d684b2"
-  integrity sha512-YPamhXBGBwirms87qL4W2NIBCsis+AFDGn911IfG4t5UGFeVxJodvD5zB8Q3Fo/Qwyq95J8stfvZf5ZI1ECf7w==
+"@shopify/shop-minis-platform-sdk@0.1.110":
+  version "0.1.110"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.110.tgz#56621a58dc78080dc038895c7a1a3ddad93449f9"
+  integrity sha512-noUS5ccM2aLBJDmHNQ0DacbvRtbq/klfRt0cZOHemnLhy08ULAyVUjfHNKe6gFb+xMZ05Bo4mLicytomUNzmxg==
 
 "@shopify/shop-minis-runtime@0.0.117":
   version "0.0.117"

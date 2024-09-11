@@ -69,7 +69,7 @@ const CollageImage = ({
           <Icon
             color="foregrounds-subdued"
             size={imageCount === 1 ? 's' : 'xs'}
-            name="thumbs-down"
+            name="no-image"
           />
         </Box>
       )}
