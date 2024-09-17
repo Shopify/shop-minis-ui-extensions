@@ -13,11 +13,11 @@
     "bump-minis-libs": "yarn add --exact -W @shopify/shop-minis-platform-sdk@latest @shopify/shop-minis-runtime@latest @shopify/shop-minis-cli@latest"
   },
   "dependencies": {
-    "@shopify/shop-minis-platform-sdk": "0.1.110",
-    "@shopify/shop-minis-runtime": "0.0.117"
+    "@shopify/shop-minis-platform-sdk": "0.1.113",
+    "@shopify/shop-minis-runtime": "0.0.118"
   },
   "devDependencies": {
-    "@shopify/shop-minis-cli": "0.0.133",
+    "@shopify/shop-minis-cli": "0.0.134",
     "@testing-library/react-native": "^12.5.2",
     "@types/jest": "^29.2.6",
     "babel-jest": "^26.6.3",
