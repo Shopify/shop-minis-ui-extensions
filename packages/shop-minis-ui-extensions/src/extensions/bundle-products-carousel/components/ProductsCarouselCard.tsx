@@ -1,7 +1,7 @@
 import {
   Box,
   ProductCard,
-  VariantPicker,
+  MultiStepVariantPicker,
   ProductOption,
   Variant,
   Button,
@@ -48,6 +48,26 @@ export function ProductsCarouselCard({
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
   const [isAddedToBundle, setIsAddedToBundle] = useState(false)
 
+  const getQuantity = (prod: ProductsCarouselProduct) => {
+    const productId = product.id
+    const currProductVariant =
+      prod.variants.find(variant => variant.id === productId) ??
+      prod?.defaultVariant
+
+    if (!currProductVariant) {
+      return 0
+    }
+
+    return (
+      prod.variants.find(
+        variant =>
+          variant.id === productId && variant.id === currProductVariant.id
+      )?.quantityAvailable ?? 0
+    )
+  }
+
+  const [quantity, setQuantity] = useState(0)
+
   const toggleAddedToBundle = useCallback(() => {
     const callback = isAddedToBundle
       ? onProductRemovedFromBundle
@@ -76,24 +96,24 @@ export function ProductsCarouselCard({
         selectedProductVariant={selectedVariant}
       />
       <Box marginVertical="xs">
-        <VariantPicker
+        <MultiStepVariantPicker
           variants={product.variants}
           productOptions={product.options}
           initialSelectedOptions={selectedVariant.selectedOptions}
-          condensed
           onProductVariantUpdated={(variant: Variant | null) => {
             if (variant) {
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
               setSelectedVariant(variant)
             }
           }}
+          onQuantityChange={newQuantity => {
+            setQuantity(newQuantity)
+            toggleAddedToBundle()
+          }}
+          variantQuantity={quantity}
+          maxQuantity={getQuantity(product)}
         />
       </Box>
-      <Button
-        variant={isAddedToBundle ? 'dangerous' : 'secondary'}
-        text={isAddedToBundle ? 'Remove' : 'Add'}
-        onPress={toggleAddedToBundle}
-      />
     </Box>
   )
 }
