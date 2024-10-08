@@ -1,7 +1,7 @@
 import {
   Box,
   ProductCard,
-  MultiStepVariantPicker,
+  CompactVariantPicker,
   ProductOption,
   Variant,
   Button,
@@ -29,58 +29,18 @@ const CAROUSEL_CARD_UNIT_WIDTH = SCREEN_WIDTH / 2 - theme.spacing.gutter
 export function ProductsCarouselCard({
   product,
   shopId,
-  onProductAddedToBundle,
-  onProductRemovedFromBundle,
+  onProductVariantUpdated,
   fixedWidth,
 }: {
   product: ProductsCarouselProduct
   shopId: string
-  onProductAddedToBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProduct['defaultVariant']
-  ) => void
-  onProductRemovedFromBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProduct['defaultVariant']
+  onProductVariantUpdated: (
+    variant: ProductsCarouselProductVariant,
+    quantity: number
   ) => void
   fixedWidth?: boolean
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
-  const [isAddedToBundle, setIsAddedToBundle] = useState(false)
-
-  const getQuantity = (prod: ProductsCarouselProduct) => {
-    const productId = product.id
-    const currProductVariant =
-      prod.variants.find(variant => variant.id === productId) ??
-      prod?.defaultVariant
-
-    if (!currProductVariant) {
-      return 0
-    }
-
-    return (
-      prod.variants.find(
-        variant =>
-          variant.id === productId && variant.id === currProductVariant.id
-      )?.quantityAvailable ?? 0
-    )
-  }
-
-  const [quantity, setQuantity] = useState(0)
-
-  const toggleAddedToBundle = useCallback(() => {
-    const callback = isAddedToBundle
-      ? onProductRemovedFromBundle
-      : onProductAddedToBundle
-    callback(product, selectedVariant)
-    setIsAddedToBundle(!isAddedToBundle)
-  }, [
-    isAddedToBundle,
-    onProductAddedToBundle,
-    onProductRemovedFromBundle,
-    product,
-    selectedVariant,
-  ])
 
   return (
     <Box
@@ -96,22 +56,20 @@ export function ProductsCarouselCard({
         selectedProductVariant={selectedVariant}
       />
       <Box marginVertical="xs">
-        <MultiStepVariantPicker
+        <CompactVariantPicker
           variants={product.variants}
           productOptions={product.options}
-          initialSelectedOptions={selectedVariant.selectedOptions}
-          onProductVariantUpdated={(variant: Variant | null) => {
+          initialSelectedOptions={product.defaultVariant.selectedOptions}
+          selectedOptions={selectedVariant.selectedOptions}
+          onProductVariantUpdated={(
+            variant: ProductsCarouselProductVariant | null,
+            quantity: number
+          ) => {
             if (variant) {
-              // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
               setSelectedVariant(variant)
+              onProductVariantUpdated(variant, quantity)
             }
           }}
-          onQuantityChange={newQuantity => {
-            setQuantity(newQuantity)
-            toggleAddedToBundle()
-          }}
-          variantQuantity={quantity}
-          maxQuantity={getQuantity(product)}
         />
       </Box>
     </Box>
