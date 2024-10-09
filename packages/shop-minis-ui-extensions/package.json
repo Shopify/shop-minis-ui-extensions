@@ -14,7 +14,6 @@
   "licenseFilename": "LICENSE.md",
   "peerDependencies": {
     "@react-navigation/native": "*",
-    "@shopify/shop-minis-platform-sdk": "*",
     "lodash": "*",
     "react": "*",
     "react-native": "*",
@@ -25,9 +24,6 @@
   },
   "peerDependenciesMeta": {
     "@react-navigation/native": {
-      "optional": true
-    },
-    "@shopify/shop-minis-platform-sdk": {
       "optional": true
     },
     "lodash": {
