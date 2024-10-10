@@ -17,19 +17,14 @@ export function BundleProductsCarousel({
   products,
   shopId,
   subtitle,
-  onProductAddedToBundle,
-  onProductRemovedFromBundle,
+  onProductVariantUpdated,
   title = 'Bundle and Save',
 }: {
   products: ProductsCarouselProduct[]
   shopId: string
-  onProductAddedToBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProductVariant
-  ) => void
-  onProductRemovedFromBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProductVariant
+  onProductVariantUpdated: (
+    variant: ProductsCarouselProductVariant,
+    quantity: number
   ) => void
   title?: string
   subtitle?: string
@@ -59,8 +54,7 @@ export function BundleProductsCarousel({
                   // eslint-disable-next-line react/no-array-index-key
                   key={`${product.id}-${index}`}
                   product={product}
-                  onProductAddedToBundle={onProductAddedToBundle}
-                  onProductRemovedFromBundle={onProductRemovedFromBundle}
+                  onProductVariantUpdated={onProductVariantUpdated}
                   shopId={shopId}
                   fixedWidth={products.length <= 2} // when we have two products or less each card dynamically takes 50% width
                 />

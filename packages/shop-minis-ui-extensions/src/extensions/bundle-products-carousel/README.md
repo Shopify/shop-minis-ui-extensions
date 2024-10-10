@@ -16,20 +16,24 @@ import { BundleProductsCarousel } from '@shopify/shop-minis-ui-extensions'
   subtitle="Add items to your bundle and discover savings"
   products={products}
   shopId="shop456"
-  onProductAddedToBundle={(product, variant) => console.log("Added", product, variant)}
-  onProductRemovedFromBundle={(product, variant) => console.log("Removed", product, variant)}
+  onProductVariantUpdated={(variant, quantity) => {
+    console.log(
+      'onProductVariantUpdated',
+      variant.selectedOptions,
+      quantity
+    )
+  }}
 />
 ```
 
 ### Props
 The component accepts the following props:
 
-- **products** (`ProductsCarouselProduct[]`): An array of products to be displayed in the carousel. Each product object includes details necessary for display and interaction.
-- **shopId** (`string`): The identifier for the shop where the products are hosted.
-- **onProductAddedToBundle** (`(product: ProductsCarouselProduct, variant: ProductsCarouselProductVariant) => void`): A callback function that is invoked when a product is added to the bundle.
-- **onProductRemovedFromBundle** (`(product: ProductsCarouselProduct, variant: ProductsCarouselProductVariant) => void`): A callback function that is invoked when a product is removed from the bundle.
 - **title** (`string`, optional): The title to be displayed above the carousel. Defaults to "Bundle and Save" if not provided.
 - **subtitle** (`string`, optional): A subtitle to provide additional context or information about the products in the carousel.
+- **products** (`ProductsCarouselProduct[]`): An array of products to be displayed in the carousel. Each product object includes details necessary for display and interaction.
+- **shopId** (`string`): The identifier for the shop where the products are hosted.
+- **onProductVariantUpdated** (`(variant: ProductsCarouselProductVariant) => void, quantity?: number `): A callback function that is invoked when variant is selected in the bundle.
 
 
 | <img src="../../assets/extensions/bundle-products-carousel-full.png" alt="Example of BundleProductsCarousel" width="390" /> |
