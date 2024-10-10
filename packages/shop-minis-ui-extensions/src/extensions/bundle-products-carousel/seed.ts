@@ -108,6 +108,12 @@ const FIXTURE_VARIANT_3: ProductsCarouselProduct['defaultVariant'] = {
       url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_0a4e9096-021a-4c1e-8750-24b233166a12_990x.jpg?v=1671633756',
     },
   },
+  image: {
+    __typename: 'Image' as const,
+    id: 'gid://shopify/ProductImage/39774118445078',
+    altText: null,
+    url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_0a4e9096-021a-4c1e-8750-24b233166a12_990x.jpg?v=1671633756',
+  },
 } as const
 
 export const FIXTURE_PRODUCT: ProductsCarouselProduct = {
@@ -143,12 +149,24 @@ const FIXTURE_PRODUCT_2: ProductsCarouselProduct = {
   ...FIXTURE_PRODUCT,
   id: 'gid://shopify/Product/7922581602559-2',
   title: 'The Hero Snowboard 2',
+  featuredImage: {
+    __typename: 'Image',
+    id: 'gid://shopify/ProductImage/39774118445078',
+    altText: null,
+    url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_0a4e9096-021a-4c1e-8750-24b233166a12_990x.jpg?v=1671633756',
+  },
 }
 
 const FIXTURE_PRODUCT_3: ProductsCarouselProduct = {
   ...FIXTURE_PRODUCT,
   id: 'gid://shopify/Product/7922581602559-3',
   title: 'The Hero Snowboard 3',
+  featuredImage: {
+    __typename: 'Image',
+    id: 'gid://shopify/ProductImage/39774118445078',
+    altText: null,
+    url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_0a4e9096-021a-4c1e-8750-24b233166a12_990x.jpg?v=1671633756',
+  },
 }
 
 export const FIXTURE_SHOP_GID = '62104633599'

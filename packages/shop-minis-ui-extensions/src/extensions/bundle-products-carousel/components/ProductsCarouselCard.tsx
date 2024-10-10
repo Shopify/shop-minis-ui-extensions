@@ -4,10 +4,9 @@ import {
   CompactVariantPicker,
   ProductOption,
   Variant,
-  Button,
   theme,
 } from '@shopify/shop-minis-platform-sdk'
-import {ComponentProps, useCallback, useState} from 'react'
+import {ComponentProps, useState} from 'react'
 import {Dimensions} from 'react-native'
 
 const {width: SCREEN_WIDTH} = Dimensions.get('screen')
@@ -62,12 +61,16 @@ export function ProductsCarouselCard({
           initialSelectedOptions={product.defaultVariant.selectedOptions}
           selectedOptions={selectedVariant.selectedOptions}
           onProductVariantUpdated={(
-            variant: ProductsCarouselProductVariant | null,
-            quantity: number
+            variant: Variant | null,
+            quantity?: number
           ) => {
             if (variant) {
-              setSelectedVariant(variant)
-              onProductVariantUpdated(variant, quantity)
+              console.log('variant', variant.selectedOptions)
+              setSelectedVariant(variant as ProductsCarouselProductVariant)
+              onProductVariantUpdated(
+                variant as ProductsCarouselProductVariant,
+                quantity ?? 1
+              )
             }
           }}
         />
