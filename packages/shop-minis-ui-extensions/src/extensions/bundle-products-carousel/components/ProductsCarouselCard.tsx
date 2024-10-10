@@ -65,12 +65,10 @@ export function ProductsCarouselCard({
             quantity?: number
           ) => {
             if (variant) {
-              console.log('variant', variant.selectedOptions)
-              setSelectedVariant(variant as ProductsCarouselProductVariant)
-              onProductVariantUpdated(
-                variant as ProductsCarouselProductVariant,
-                quantity ?? 1
-              )
+              // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
+              setSelectedVariant(variant)
+              // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
+              onProductVariantUpdated(variant, quantity)
             }
           }}
         />
