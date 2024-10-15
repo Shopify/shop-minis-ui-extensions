@@ -1,13 +1,12 @@
 import {
   Box,
   ProductCard,
-  VariantPicker,
+  CompactVariantPicker,
   ProductOption,
   Variant,
-  Button,
   theme,
 } from '@shopify/shop-minis-platform-sdk'
-import {ComponentProps, useCallback, useState} from 'react'
+import {ComponentProps, useState} from 'react'
 import {Dimensions} from 'react-native'
 
 const {width: SCREEN_WIDTH} = Dimensions.get('screen')
@@ -29,38 +28,20 @@ const CAROUSEL_CARD_UNIT_WIDTH = SCREEN_WIDTH / 2 - theme.spacing.gutter
 export function ProductsCarouselCard({
   product,
   shopId,
-  onProductAddedToBundle,
-  onProductRemovedFromBundle,
+  onProductVariantUpdated,
   fixedWidth,
+  maxQuantity,
 }: {
   product: ProductsCarouselProduct
   shopId: string
-  onProductAddedToBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProduct['defaultVariant']
-  ) => void
-  onProductRemovedFromBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProduct['defaultVariant']
+  onProductVariantUpdated: (
+    variant: ProductsCarouselProductVariant,
+    quantity: number
   ) => void
   fixedWidth?: boolean
+  maxQuantity?: number
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
-  const [isAddedToBundle, setIsAddedToBundle] = useState(false)
-
-  const toggleAddedToBundle = useCallback(() => {
-    const callback = isAddedToBundle
-      ? onProductRemovedFromBundle
-      : onProductAddedToBundle
-    callback(product, selectedVariant)
-    setIsAddedToBundle(!isAddedToBundle)
-  }, [
-    isAddedToBundle,
-    onProductAddedToBundle,
-    onProductRemovedFromBundle,
-    product,
-    selectedVariant,
-  ])
 
   return (
     <Box
@@ -76,24 +57,25 @@ export function ProductsCarouselCard({
         selectedProductVariant={selectedVariant}
       />
       <Box marginVertical="xs">
-        <VariantPicker
+        <CompactVariantPicker
           variants={product.variants}
           productOptions={product.options}
-          initialSelectedOptions={selectedVariant.selectedOptions}
-          condensed
-          onProductVariantUpdated={(variant: Variant | null) => {
+          initialSelectedOptions={product.defaultVariant.selectedOptions}
+          selectedOptions={selectedVariant.selectedOptions}
+          onProductVariantUpdated={(
+            variant: Variant | null,
+            quantity?: number
+          ) => {
             if (variant) {
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
               setSelectedVariant(variant)
+              // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
+              onProductVariantUpdated(variant, quantity)
             }
           }}
+          maxQuantity={maxQuantity}
         />
       </Box>
-      <Button
-        variant={isAddedToBundle ? 'dangerous' : 'secondary'}
-        text={isAddedToBundle ? 'Remove' : 'Add'}
-        onPress={toggleAddedToBundle}
-      />
     </Box>
   )
 }

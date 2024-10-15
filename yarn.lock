@@ -2873,10 +2873,10 @@
     serve-static "^1.15.0"
     suppress-experimental-warnings "^1.1.17"
 
-"@shopify/shop-minis-platform-sdk@0.1.115":
-  version "0.1.115"
-  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.1.115.tgz#37a7335c903aee6b7938fa077fca86d9c37f0ab2"
-  integrity sha512-shQ5PqYNViduO7YQe4vOIno3AZymFzqdNMyIgvl6XzrLYzpRrtLbERkExwHZfqyj2Jkv73Gophmw8i8z8ULF4Q==
+"@shopify/shop-minis-platform-sdk@0.0.0-snapshot.20241015125327":
+  version "0.0.0-snapshot.20241015125327"
+  resolved "https://registry.yarnpkg.com/@shopify/shop-minis-platform-sdk/-/shop-minis-platform-sdk-0.0.0-snapshot.20241015125327.tgz#8e5c4d9bb6f88b797a9c49539ef18ad1cb3b2b86"
+  integrity sha512-zEtWD8eGnja5/mMH/0F9U3GQrBKDYn7h1kVPKMQhzRGLn5vOXt/mZH8ih/HEWqE6dh8c0BNk64L5Mbo+DPRsbQ==
 
 "@shopify/shop-minis-runtime@0.0.121":
   version "0.0.121"

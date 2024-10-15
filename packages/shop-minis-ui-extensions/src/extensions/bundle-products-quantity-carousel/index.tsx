@@ -13,26 +13,23 @@ import {
   ProductsCarouselProductVariant,
 } from './components/ProductsCarouselCard'
 
-export function BundleProductsCarousel({
+export function BundleProductsQuantityCarousel({
   products,
   shopId,
   subtitle,
-  onProductAddedToBundle,
-  onProductRemovedFromBundle,
+  onProductVariantUpdated,
   title = 'Bundle and Save',
+  maxQuantity,
 }: {
   products: ProductsCarouselProduct[]
   shopId: string
-  onProductAddedToBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProductVariant
-  ) => void
-  onProductRemovedFromBundle: (
-    product: ProductsCarouselProduct,
-    variant: ProductsCarouselProductVariant
+  onProductVariantUpdated: (
+    variant: ProductsCarouselProductVariant,
+    quantity: number
   ) => void
   title?: string
   subtitle?: string
+  maxQuantity?: number
 }) {
   const cardsShouldScroll = products.length > 2 // 1 or 2 items fit in the screen width, so no need to scroll
 
@@ -59,10 +56,10 @@ export function BundleProductsCarousel({
                   // eslint-disable-next-line react/no-array-index-key
                   key={`${product.id}-${index}`}
                   product={product}
-                  onProductAddedToBundle={onProductAddedToBundle}
-                  onProductRemovedFromBundle={onProductRemovedFromBundle}
+                  onProductVariantUpdated={onProductVariantUpdated}
                   shopId={shopId}
                   fixedWidth={products.length <= 2} // when we have two products or less each card dynamically takes 50% width
+                  maxQuantity={maxQuantity}
                 />
               ))}
             </Box>
