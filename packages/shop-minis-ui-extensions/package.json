@@ -1,6 +1,6 @@
 {
   "name": "@shopify/shop-minis-ui-extensions",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "publishConfig": {
     "access": "public",
     "@shopify:registry": "https://registry.npmjs.org/"
