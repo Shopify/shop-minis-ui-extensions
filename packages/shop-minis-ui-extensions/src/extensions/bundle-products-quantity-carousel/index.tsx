@@ -25,14 +25,14 @@ export function BundleProductsQuantityCarousel({
   shopId: string
   onProductVariantUpdated: (
     variant: ProductsCarouselProductVariant,
-    quantity: number
+    quantity: number,
+    cardIndex: number
   ) => void
   title?: string
   subtitle?: string
   maxQuantity?: number
 }) {
   const cardsShouldScroll = products.length > 2 // 1 or 2 items fit in the screen width, so no need to scroll
-
   return (
     <ExtensionProviders>
       <Box marginTop="s" gap="xxs">
@@ -56,6 +56,7 @@ export function BundleProductsQuantityCarousel({
                   // eslint-disable-next-line react/no-array-index-key
                   key={`${product.id}-${index}`}
                   product={product}
+                  cardIndex={index}
                   onProductVariantUpdated={onProductVariantUpdated}
                   shopId={shopId}
                   fixedWidth={products.length <= 2} // when we have two products or less each card dynamically takes 50% width

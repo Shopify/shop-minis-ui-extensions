@@ -31,15 +31,18 @@ export function ProductsCarouselCard({
   onProductVariantUpdated,
   fixedWidth,
   maxQuantity,
+  cardIndex,
 }: {
   product: ProductsCarouselProduct
   shopId: string
   onProductVariantUpdated: (
     variant: ProductsCarouselProductVariant,
-    quantity: number
+    quantity: number,
+    cardIndex: number
   ) => void
   fixedWidth?: boolean
   maxQuantity?: number
+  cardIndex: number
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
 
@@ -70,10 +73,11 @@ export function ProductsCarouselCard({
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
               setSelectedVariant(variant)
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
-              onProductVariantUpdated(variant, quantity)
+              onProductVariantUpdated(variant, quantity, cardIndex)
             }
           }}
           maxQuantity={maxQuantity}
+          cardIndex={cardIndex}
         />
       </Box>
     </Box>

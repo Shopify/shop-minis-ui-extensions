@@ -13,7 +13,7 @@
     "bump-minis-libs": "yarn add --exact -W @shopify/shop-minis-platform-sdk@latest @shopify/shop-minis-runtime@latest @shopify/shop-minis-cli@latest"
   },
   "dependencies": {
-    "@shopify/shop-minis-platform-sdk": "0.0.0-snapshot.20241015125327",
+    "@shopify/shop-minis-platform-sdk": "0.0.0-snapshot.20241017143130",
     "@shopify/shop-minis-runtime": "0.0.121"
   },
   "devDependencies": {
