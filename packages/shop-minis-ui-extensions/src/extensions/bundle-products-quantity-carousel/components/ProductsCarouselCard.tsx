@@ -70,7 +70,7 @@ export function ProductsCarouselCard({
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
               setSelectedVariant(variant)
               // @ts-expect-error - variants picker doesn't know that we are working with a different shape of variants
-              onProductVariantUpdated(variant, quantity, cardIndex)
+              onProductVariantUpdated(variant, quantity)
             }
           }}
           maxQuantity={maxQuantity}

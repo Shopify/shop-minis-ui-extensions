@@ -26,7 +26,7 @@ export function BundleProductsQuantityCarousel({
   onProductVariantUpdated: (
     variant: ProductsCarouselProductVariant,
     quantity: number,
-    cardIndex: number
+    index: number
   ) => void
   title?: string
   subtitle?: string
@@ -56,9 +56,9 @@ export function BundleProductsQuantityCarousel({
                   // eslint-disable-next-line react/no-array-index-key
                   key={`${product.id}-${index}`}
                   product={product}
-                  onProductVariantUpdated={(variant, quantity) =>
+                  onProductVariantUpdated={(variant, quantity) => {
                     onProductVariantUpdated(variant, quantity, index)
-                  }
+                  }}
                   shopId={shopId}
                   fixedWidth={products.length <= 2} // when we have two products or less each card dynamically takes 50% width
                   maxQuantity={maxQuantity}
