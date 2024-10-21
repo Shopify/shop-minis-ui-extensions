@@ -31,18 +31,15 @@ export function ProductsCarouselCard({
   onProductVariantUpdated,
   fixedWidth,
   maxQuantity,
-  cardIndex,
 }: {
   product: ProductsCarouselProduct
   shopId: string
   onProductVariantUpdated: (
     variant: ProductsCarouselProductVariant,
-    quantity: number,
-    cardIndex: number
+    quantity: number
   ) => void
   fixedWidth?: boolean
   maxQuantity?: number
-  cardIndex: number
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.defaultVariant)
 
@@ -77,7 +74,6 @@ export function ProductsCarouselCard({
             }
           }}
           maxQuantity={maxQuantity}
-          cardIndex={cardIndex}
         />
       </Box>
     </Box>

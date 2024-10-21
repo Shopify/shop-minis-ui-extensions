@@ -16,12 +16,12 @@ export function RenderPPExtension({
       products={FIXTURE_PRODUCTS}
       shopId={FIXTURE_SHOP_GID}
       subtitle="Save up to 30% buying these together"
-      onProductVariantUpdated={(variant, quantity, cardIndex) => {
+      onProductVariantUpdated={(variant, quantity, index) => {
         console.log(
           'onProductVariantUpdated',
           variant.selectedOptions,
           quantity,
-          cardIndex
+          index
         )
       }}
       maxQuantity={1}
