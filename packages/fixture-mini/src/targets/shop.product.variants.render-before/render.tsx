@@ -1,4 +1,4 @@
-import {BundleProductsCarousel} from '@shopify/shop-minis-ui-extensions'
+import {BundleProductsQuantityCarousel} from '@shopify/shop-minis-ui-extensions'
 import {
   FIXTURE_PRODUCTS,
   FIXTURE_SHOP_GID,
@@ -12,12 +12,19 @@ export function RenderPPExtension({
   extensionData: PPQueryQueryData
 }) {
   return (
-    <BundleProductsCarousel
+    <BundleProductsQuantityCarousel
       products={FIXTURE_PRODUCTS}
       shopId={FIXTURE_SHOP_GID}
       subtitle="Save up to 30% buying these together"
-      onProductAddedToBundle={() => {}}
-      onProductRemovedFromBundle={() => {}}
+      onProductVariantUpdated={(variant, quantity, index) => {
+        console.log(
+          'onProductVariantUpdated',
+          variant.selectedOptions,
+          quantity,
+          index
+        )
+      }}
+      maxQuantity={1}
     />
   )
 }
