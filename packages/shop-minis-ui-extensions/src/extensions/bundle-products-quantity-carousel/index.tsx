@@ -36,9 +36,16 @@ export function BundleProductsQuantityCarousel({
   return (
     <ExtensionProviders>
       <Box marginTop="s" gap="xxs">
-        <Text variant="bodyTitleLarge">{title}</Text>
+        <Text variant="bodyTitleLarge" numberOfLines={1} ellipsizeMode="tail">
+          {title}
+        </Text>
         {subtitle ? (
-          <Text variant="bodySmall" color="foregrounds-subdued">
+          <Text
+            variant="bodySmall"
+            color="foregrounds-subdued"
+            numberOfLines={1}
+            ellipsizeMode="tail"
+          >
             {subtitle}
           </Text>
         ) : null}
