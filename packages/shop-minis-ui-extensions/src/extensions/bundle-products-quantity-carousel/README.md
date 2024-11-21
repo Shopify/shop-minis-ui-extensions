@@ -29,8 +29,8 @@ import { BundleProductsQuantityCarousel } from '@shopify/shop-minis-ui-extension
 ### Props
 The component accepts the following props:
 
-- **title** (`string`, optional): The title to be displayed above the carousel. Defaults to "Bundle and Save" if not provided.
-- **subtitle** (`string`, optional): A subtitle to provide additional context or information about the products in the carousel.
+- **title** (`string`, optional): The title to be displayed above the carousel. Defaults to "Bundle and Save" if not provided. *Note that the title will be forced to fit in a single line and will be truncated with an ellipsis if it exceeds the available width.*
+- **subtitle** (`string`, optional): A subtitle to provide additional context or information about the products in the carousel. *Note that the subtitle will be forced to fit in a single line and will be truncated with an ellipsis if it exceeds the available width.*
 - **products** (`ProductsCarouselProduct[]`): An array of products to be displayed in the carousel. Each product object includes details necessary for display and interaction.
 - **shopId** (`string`): The identifier for the shop where the products are hosted.
 - **onProductVariantUpdated** (`(variant: ProductsCarouselProductVariant) => void, quantity?: number `): A callback function that is invoked when variant is selected in the bundle.
