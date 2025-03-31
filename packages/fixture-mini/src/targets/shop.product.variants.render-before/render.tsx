@@ -1,4 +1,7 @@
-import {BundleProductsQuantityCarousel} from '@shopify/shop-minis-ui-extensions'
+import {
+  BundleProductsQuantityCarousel,
+  MarketingCard,
+} from '@shopify/shop-minis-ui-extensions'
 import {
   FIXTURE_PRODUCTS,
   FIXTURE_SHOP_GID,
@@ -12,19 +15,26 @@ export function RenderPPExtension({
   extensionData: PPQueryQueryData
 }) {
   return (
-    <BundleProductsQuantityCarousel
-      products={FIXTURE_PRODUCTS}
-      shopId={FIXTURE_SHOP_GID}
-      subtitle="Save up to 30% buying these together"
-      onProductVariantUpdated={(variant, quantity, index) => {
-        console.log(
-          'onProductVariantUpdated',
-          variant.selectedOptions,
-          quantity,
-          index
-        )
+    // <BundleProductsQuantityCarousel
+    //   products={FIXTURE_PRODUCTS}
+    //   shopId={FIXTURE_SHOP_GID}
+    //   subtitle="Save up to 30% buying these together"
+    //   onProductVariantUpdated={(variant, quantity, index) => {
+    //     console.log(
+    //       'onProductVariantUpdated',
+    //       variant.selectedOptions,
+    //       quantity,
+    //       index
+    //     )
+    //   }}
+    //   maxQuantity={1}
+    // />
+    <MarketingCard
+      iconName="arrow-right"
+      image={{
+        url: 'https://cdn.shopify.com/s/files/1/0621/0463/3599/files/preview_images/197d24d529fd4d5685d88b8e7a0e99b3.thumbnail.0000000000.jpg',
       }}
-      maxQuantity={1}
+      actionText="Action Text"
     />
   )
 }
