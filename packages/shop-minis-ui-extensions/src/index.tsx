@@ -7,6 +7,7 @@ export {
 export {BundleUpsell} from './extensions/bundle-upsell'
 export {BundleCollection} from './extensions/bundle-collection'
 export {DefaultCard} from './extensions/default-card'
+export {MarketingCard} from './extensions/marketing-card'
 export {ImageCollection} from './extensions/image-collection'
 export {Link} from './extensions/link'
 export {ProductOfferCard} from './extensions/product-offer-card'
