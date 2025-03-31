@@ -8,7 +8,7 @@ import {
 
 import {IconName} from '../types'
 
-interface Props {
+interface MarketingCardViewProps {
   image: {
     url: string
   }
@@ -17,7 +17,7 @@ interface Props {
   onPress: () => void
 }
 
-export function MarketingCardView(props: Props) {
+export function MarketingCardView(props: MarketingCardViewProps) {
   const {image, iconName = 'arrow-right', actionText, onPress} = props
 
   return (
