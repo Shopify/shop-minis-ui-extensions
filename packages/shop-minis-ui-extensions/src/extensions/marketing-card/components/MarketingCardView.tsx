@@ -5,6 +5,7 @@ import {
   PressableAnimated,
   Icon,
 } from '@shopify/shop-minis-platform-sdk'
+
 import {IconName} from '../types'
 
 interface MarketingCardViewProps {
@@ -38,7 +39,7 @@ export function MarketingCardView(props: MarketingCardViewProps) {
             alignItems="flex-end"
             marginHorizontal="s"
           >
-            <Box flex={1} justifyContent={'space-between'} flexDirection="row">
+            <Box flex={1} justifyContent="space-between" flexDirection="row">
               <Text variant="heroNormal">{actionText}</Text>
               <Icon style={{alignSelf: 'center'}} name={iconName} size="m" />
             </Box>
