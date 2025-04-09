@@ -5,6 +5,7 @@ import {
   PressableAnimated,
   Icon,
 } from '@shopify/shop-minis-platform-sdk'
+
 import {IconName} from '../types'
 
 interface MarketingCardViewProps {

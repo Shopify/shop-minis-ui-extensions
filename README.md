@@ -11,7 +11,7 @@ We welcome contributions from the community to help improve and expand the Shop 
 To contribute to the Shop Minis UI Extensions project, please follow these steps:
 
 1. **Orientation**: Familiarize yourself with our [Design Guidelines](docs/DESIGN_GUIDELINES.md) and [Code Guidelines](docs/CODE_GUIDELINES.md).
-2. **Proposal**: Submit a new component proposal using the [New Component Proposal Issue Template](.github/ISSUE_TEMPLATE/new_component_proposal.md).
+2. **Proposal**: Submit a new component proposal using the [New Component Proposal Issue Template](issues/new?template=feature_request.yml).
 3. **Coding**: Once your proposal is approved, start building your component using the Shop Minis SDK components.
 4. **Submission**: Submit your component for review by creating a pull request using our [Pull Request Template](.github/pull_request_template.md).
 
@@ -19,14 +19,10 @@ To contribute to the Shop Minis UI Extensions project, please follow these steps
 
 We have several issue templates to help streamline the contribution process:
 
-- [New Component Proposal](.github/ISSUE_TEMPLATE/new_component_proposal.md): For proposing new UI components.
-- [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md): For reporting bugs or issues with existing components.
-- [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md): For suggesting new features or enhancements to existing components.
-- [General Inquiry](.github/ISSUE_TEMPLATE/general_inquiry.md): For asking general questions or seeking clarification on guidelines, processes, or other aspects of the project.
-
-### Pull Request Template
-
-Please use the following [Pull Request Template](.github/pull_request_template.md) when submitting your pull request to ensure all necessary information is provided.
+- [New Component Proposal](issues/new?template=new_component_proposal.yml): For proposing new UI components.
+- [Bug Report](issues/new?template=bug_report.yml): For reporting bugs or issues with existing components.
+- [Feature Request](issues/new?template=feature_request.yml): For suggesting new features or enhancements to existing components.
+- [General Inquiry](issues/new?template=general_inquiry.yml): For asking general questions or seeking clarification on guidelines, processes, or other aspects of the project.
 
 ## Getting Started
 

@@ -27,7 +27,6 @@ const DEFAULT_VARIANT = {
 }
 
 const FIXTURE_VARIANT_1: ProductsCarouselProduct['defaultVariant'] = {
-  __typename: 'ProductVariant' as const,
   id: 'gid://shopify/ProductVariant/7982547763222',
   title: 'Default Title',
   isFavorited: false,
@@ -38,17 +37,14 @@ const FIXTURE_VARIANT_1: ProductsCarouselProduct['defaultVariant'] = {
     {name: 'Color', value: 'Red'},
   ],
   compareAtPrice: {
-    __typename: 'Money' as const,
     amount: '702.00',
     currencyCode: CurrencyCode.USD,
   },
   price: {
-    __typename: 'Money' as const,
     amount: '601.95',
     currencyCode: CurrencyCode.USD,
   },
   image: {
-    __typename: 'Image' as const,
     id: 'gid://shopify/ProductImage/39774118445078',
     altText: null,
     url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a_990x.jpg?v=1671634025',
@@ -56,11 +52,9 @@ const FIXTURE_VARIANT_1: ProductsCarouselProduct['defaultVariant'] = {
 } as const
 
 export const FIXTURE_PRODUCT: ProductsCarouselProduct = {
-  __typename: 'Product',
   id: 'gid://shopify/Product/7922581602559',
   title: 'The Hero Snowboard',
   featuredImage: {
-    __typename: 'Image',
     id: 'gid://shopify/ProductImage/39774118445078',
     altText: null,
     url: 'https://cdn.shopify.com/s/files/1/0688/2233/5510/products/Main_0a4e9096-021a-4c1e-8750-24b233166a12_990x.jpg?v=1671633756',
