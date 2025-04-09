@@ -46,7 +46,7 @@ export function MarketingCardView(props: MarketingCardViewProps) {
             alignItems="flex-end"
             marginHorizontal="s"
           >
-            <Box flex={1} justifyContent={'space-between'} flexDirection="row">
+            <Box flex={1} justifyContent="space-between" flexDirection="row">
               <Text
                 variant="heroNormal"
                 color={color === 'white' ? 'opaque-white' : 'opaque-black'}
