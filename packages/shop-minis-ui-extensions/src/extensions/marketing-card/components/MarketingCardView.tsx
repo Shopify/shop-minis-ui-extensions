@@ -15,22 +15,29 @@ interface MarketingCardViewProps {
   iconName?: IconName
   actionText: string
   onPress: () => void
+  color?: 'white' | 'black'
 }
 
 export function MarketingCardView(props: MarketingCardViewProps) {
-  const {image, iconName = 'arrow-right', actionText, onPress} = props
+  const {
+    image,
+    iconName = 'arrow-right',
+    actionText,
+    onPress,
+    color = 'white',
+  } = props
 
   return (
     <PressableAnimated onPress={onPress} accessibilityRole="button">
       <Box>
         <ImageBox
           width="100%"
-          aspectRatio={2.2}
+          aspectRatio={3.2}
           source={{
             uri: image.url,
           }}
           borderRadius="m"
-          resizeMode="center"
+          resizeMode="contain"
         >
           <Box
             flex={1}
@@ -39,9 +46,19 @@ export function MarketingCardView(props: MarketingCardViewProps) {
             alignItems="flex-end"
             marginHorizontal="s"
           >
-            <Box flex={1} justifyContent="space-between" flexDirection="row">
-              <Text variant="heroNormal">{actionText}</Text>
-              <Icon style={{alignSelf: 'center'}} name={iconName} size="m" />
+            <Box flex={1} justifyContent={'space-between'} flexDirection="row">
+              <Text
+                variant="heroNormal"
+                color={color === 'white' ? 'opaque-white' : 'opaque-black'}
+              >
+                {actionText}
+              </Text>
+              <Icon
+                style={{alignSelf: 'center'}}
+                name={iconName}
+                size="m"
+                color={color === 'white' ? 'opaque-white' : 'opaque-black'}
+              />
             </Box>
           </Box>
         </ImageBox>
