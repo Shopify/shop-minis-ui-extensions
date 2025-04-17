@@ -32,12 +32,12 @@ export function MarketingCardView(props: MarketingCardViewProps) {
       <Box>
         <ImageBox
           width="100%"
-          aspectRatio={3.2}
+          aspectRatio={2}
           source={{
             uri: image.url,
           }}
           borderRadius="m"
-          resizeMode="contain"
+          resizeMode="cover"
         >
           <Box
             flex={1}
