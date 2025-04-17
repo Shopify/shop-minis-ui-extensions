@@ -11,12 +11,16 @@ export interface MarketingCardData {
   iconName: IconName
   actionText: string
   image: Image
+  resizeMode?: 'contain' | 'cover' | 'stretch' | 'center'
+  aspectRatio?: number
 }
 
 export function MarketingCard({
   actionText,
   image,
   iconName,
+  resizeMode,
+  aspectRatio,
 }: MarketingCardData) {
   const {openMiniViewer} = useExtensionShopActions()
 
@@ -31,6 +35,8 @@ export function MarketingCard({
         iconName={iconName}
         actionText={actionText}
         onPress={onPressHandler}
+        resizeMode={resizeMode}
+        aspectRatio={aspectRatio}
       />
     </ExtensionProviders>
   )

@@ -16,6 +16,8 @@ interface MarketingCardViewProps {
   actionText: string
   onPress: () => void
   color?: 'white' | 'black'
+  aspectRatio?: number
+  resizeMode?: 'contain' | 'cover' | 'stretch' | 'center'
 }
 
 export function MarketingCardView(props: MarketingCardViewProps) {
@@ -25,6 +27,8 @@ export function MarketingCardView(props: MarketingCardViewProps) {
     actionText,
     onPress,
     color = 'white',
+    aspectRatio = 2,
+    resizeMode = 'cover',
   } = props
 
   return (
@@ -32,12 +36,12 @@ export function MarketingCardView(props: MarketingCardViewProps) {
       <Box>
         <ImageBox
           width="100%"
-          aspectRatio={3.2}
+          aspectRatio={aspectRatio}
           source={{
             uri: image.url,
           }}
           borderRadius="m"
-          resizeMode="contain"
+          resizeMode={resizeMode}
         >
           <Box
             flex={1}
