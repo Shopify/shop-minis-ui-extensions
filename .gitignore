@@ -1,6 +1,0 @@
-node_modules
-.minis-cache
-*.tsbuildinfo
-.env
-.DS_Store
-yarn-error.log
