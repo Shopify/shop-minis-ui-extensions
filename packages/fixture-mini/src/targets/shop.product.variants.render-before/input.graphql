@@ -1,6 +1,0 @@
-query PPQuery {
-  product {
-    id
-    title
-  }
-}
